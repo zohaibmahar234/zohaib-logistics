@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zohaib Logistics – transport and logistics</title>
+<meta name='description' content='Zohaib Logistics: road, air, sea and train freight, warehousing, cold chain and last-mile delivery. Get a quote on WhatsApp.'>
+<meta name='theme-color' content='#d3202a'>
+<link rel='icon' href='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22%23d3202a%22/%3E%3Ctext x=%2232%22 y=%2244%22 font-size=%2234%22 font-family=%22Arial%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22white%22%3EZL%3C/text%3E%3C/svg%3E'>
+<meta property='og:title' content='Zohaib Logistics – transport and logistics'>
+<meta property='og:description' content='Explore our 3D logistics network and request a quote on WhatsApp.'>
+<meta property='og:type' content='website'>
+<script type='application/ld+json'>{"@context":"https://schema.org","@type":"LocalBusiness","name":"Zohaib Logistics","telephone":"+923093540698","areaServed":"PK","description":"Transport and logistics: road, air, sea and train freight, warehousing and last-mile delivery."}</script>
+<style>
+:root{--ink:#1d1d1f;--card:#ffffff;--red:#d3202a;--red-ink:#ffffff;--line:#e3e3e3;--bg:#e6f0ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f2f2f2;--card:#1e2022;--line:#34383b;--bg:#e6f0ea}}
+:root[data-theme="dark"]{--ink:#f2f2f2;--card:#1e2022;--line:#34383b}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Arial,system-ui,sans-serif}
+#stage{position:fixed;inset:0;width:100%;height:100%;display:block}
+#scroller{height:840vh}
+header{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 20px 14px;z-index:5}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.5px;background:var(--red);color:var(--red-ink);padding:4px 12px;border-radius:4px}
+.nav{display:flex;gap:8px;align-items:center}
+.btn{font:600 13px/1 inherit;font-family:inherit;border:0;background:var(--red);color:var(--red-ink);padding:10px 16px;border-radius:4px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.alt{background:var(--card);color:var(--red);box-shadow:inset 0 0 0 1.5px var(--red)}
+.btn:focus-visible,.dot:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+#card{position:fixed;left:20px;bottom:calc(28px + env(safe-area-inset-bottom,0px));width:min(360px,calc(100vw - 40px));background:var(--card);padding:22px;border-radius:6px;z-index:5;box-shadow:0 10px 30px rgba(0,0,0,.14);transition:opacity .25s}
+#card.swap{opacity:0}
+#card h1{font-size:26px;line-height:1.1;letter-spacing:-.8px;margin:0 0 10px}
+#card p{margin:0 0 16px;font-size:15px;line-height:1.5;opacity:.82}
+#card .row{display:flex;gap:8px;flex-wrap:wrap}
+#dots{position:fixed;right:18px;top:33%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:5}
+.dot{width:12px;height:12px;border-radius:50%;border:0;background:var(--card);box-shadow:inset 0 0 0 2px var(--red);cursor:pointer;padding:0}
+.dot.on{background:var(--red)}
+#hint{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(28px + env(safe-area-inset-bottom,0px));font-size:13px;background:var(--card);padding:8px 12px;border-radius:4px;z-index:5;transition:opacity .4s}
+#err{display:none;position:fixed;top:0;left:0;right:0;z-index:9;padding:62px 20px 14px;text-align:center;background:var(--card);color:var(--ink);font-size:14px;border-bottom:2px solid var(--red)}
+#card{transition:opacity .4s,transform .4s;background:color-mix(in srgb,var(--card) 84%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+#card.gone{opacity:0;pointer-events:none;transform:translateY(10px)}
+.fab{position:fixed;right:18px;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:8;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.3);animation:pu 2.6s infinite}
+.fab:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+@keyframes pu{0%,100%{box-shadow:0 6px 18px rgba(0,0,0,.3),0 0 0 0 rgba(37,211,102,.5)}60%{box-shadow:0 6px 18px rgba(0,0,0,.3),0 0 0 14px rgba(37,211,102,0)}}
+.jl{display:flex;align-items:center;margin-top:12px}.jl i{width:14px;height:14px;border-radius:50%;background:var(--line);flex:none;position:relative}.jl i+i{margin-left:26px}.jl i+i:before{content:'';position:absolute;right:14px;top:6px;width:26px;height:2px;background:var(--line)}.jl i.on,.jl i.on:before{background:var(--red)}
+.row2{margin-top:18px}
+@media (prefers-reduced-motion:reduce){.fab{animation:none}}
+.btn.ic{padding:9px 11px;min-width:36px;background:var(--card);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.past #card,.past #dots,.past #hint{opacity:0!important;pointer-events:none}
+#tip{position:fixed;z-index:7;max-width:250px;background:var(--card);color:var(--ink);padding:12px 14px;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.2);display:none;font-size:14px;line-height:1.4}
+#tip b{display:block;margin-bottom:4px}
+#intro{position:fixed;inset:0;z-index:20;display:flex;flex-direction:column;gap:18px;align-items:center;justify-content:center;background:var(--bg);transition:opacity .6s}
+#intro.hide{opacity:0;pointer-events:none}
+#intro .bar{width:160px;height:3px;background:var(--line);overflow:hidden;border-radius:2px}
+#intro .bar i{display:block;height:100%;background:var(--red);transform:translateX(-100%);animation:ld 1.4s ease forwards}
+@keyframes ld{to{transform:none}}
+#more{position:relative;z-index:6;background:var(--card);color:var(--ink);padding:70px 20px 30px}
+#more>section{max-width:1000px;margin:0 auto 60px}
+#more h2{font-size:30px;letter-spacing:-.8px;margin:0 0 16px}
+#more h3{font-size:18px;margin:26px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.sv{border:1px solid var(--line);border-radius:8px;padding:18px;font-size:15px;line-height:1.5}
+.sv b{display:block;margin-bottom:6px;font-size:17px}
+.chip{display:inline-block;padding:8px 14px;border:1px solid var(--line);border-radius:99px;margin:0 8px 8px 0;font-size:14px}
+.qf{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;align-items:end}
+#more label{font-size:13px;display:block}#more label span{display:block;margin-bottom:5px;opacity:.75}
+#more input,#more select{width:100%;padding:11px;border:1px solid var(--line);border-radius:4px;background:var(--card);color:var(--ink);font:inherit}
+#qr,#tr{margin-top:14px;padding:12px 14px;border-left:3px solid var(--red);line-height:1.6;display:none}
+#qr:not(:empty),#tr:not(:empty){display:block}
+details{border-bottom:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:600}details p{margin:10px 0 0;line-height:1.6;opacity:.85}
+.row2{display:flex;gap:10px;flex-wrap:wrap}
+footer{text-align:center;font-size:13px;opacity:.7;padding:20px 0}
+#tabs{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);display:flex;gap:2px;z-index:5;background:var(--card);padding:4px;border-radius:6px;box-shadow:0 6px 20px rgba(0,0,0,.14)}
+#tabs button{font:600 12px/1 inherit;font-family:inherit;border:0;background:transparent;color:var(--ink);padding:8px 10px;border-radius:4px;cursor:pointer;white-space:nowrap}
+#tabs button.on{background:var(--red);color:var(--red-ink)}
+#tabs button:focus-visible,.tourb:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.tourb{position:fixed;right:18px;bottom:calc(92px + env(safe-area-inset-bottom,0px));z-index:8;border:0;border-radius:99px;background:var(--card);color:var(--ink);font:600 13px/1 inherit;font-family:inherit;padding:11px 16px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+#pb{position:fixed;top:0;left:0;height:3px;width:0;background:var(--red);z-index:9}
+.past #tabs,.past .tourb{opacity:0;pointer-events:none}
+@media (max-width:1360px){#tabs{display:none}}
+/* luxury lower sections */
+#more{--g:#b8914f;--gt:#8a6a2f;--lbg:#faf7f1;--lc:#ffffff;--lk:#14213d;--ll:#e4dccb;background:var(--lbg);color:var(--lk);padding:96px 24px 40px;border-top:1px solid var(--g)}
+:root[data-theme="dark"] #more{--gt:#d9b97a;--lbg:#0b1220;--lc:#121b30;--lk:#f1ece0;--ll:#26324f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #more{--gt:#d9b97a;--lbg:#0b1220;--lc:#121b30;--lk:#f1ece0;--ll:#26324f}}
+#more>section{max-width:1040px;margin:0 auto 88px}
+#more h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:38px;letter-spacing:-.4px;margin:0 0 30px;display:flex;align-items:center;gap:16px}
+#more h2:before{content:'';width:34px;height:2px;background:var(--g);flex:none}
+#more h2:after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--g),transparent)}
+#more h3{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:500;font-size:21px;color:var(--gt);margin:36px 0 14px}
+.grid{gap:18px}
+.sv{background:var(--lc);border:1px solid var(--ll);border-radius:3px;padding:30px 26px;line-height:1.7;transition:transform .3s,box-shadow .3s,border-color .3s}
+.sv:hover{transform:translateY(-4px);border-color:var(--g);box-shadow:0 18px 40px rgba(20,33,61,.14)}
+.sv b{font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:21px;margin-bottom:10px}
+.sv b:before{content:'\25c6';color:var(--g);font-size:9px;margin-inline-end:10px;vertical-align:middle}
+.sv span{opacity:.78}
+.ic{width:64px;height:40px;fill:none;stroke:var(--g);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px;display:block;transition:stroke .3s}
+.sv:hover .ic{stroke:var(--gt)}
+.chip{border:1px solid var(--g);border-radius:2px;background:transparent;color:var(--lk);padding:9px 18px;letter-spacing:.3px;transition:background .25s,color .25s}
+.chip:hover{background:var(--g);color:#14213d}
+#more label span{font-size:12px;letter-spacing:.8px;opacity:.75}
+#more input,#more select{background:var(--lc);color:var(--lk);border:1px solid var(--ll);border-radius:2px;padding:13px}
+#more input:focus,#more select:focus{outline:2px solid var(--g);outline-offset:1px;border-color:var(--g)}
+#more .btn{background:linear-gradient(135deg,#d9b97a,#b8914f);color:#14213d;border-radius:2px;letter-spacing:.4px;padding:13px 24px;font-weight:700;box-shadow:0 6px 18px rgba(184,145,79,.28);transition:filter .2s,transform .2s}
+#more .btn:hover{filter:brightness(1.07);transform:translateY(-1px)}
+#more .btn.alt{background:transparent;color:var(--lk);box-shadow:inset 0 0 0 1.5px var(--g)}
+#qr,#tr{border:1px solid var(--g);border-radius:2px;background:rgba(184,145,79,.09);padding:16px 20px}
+.jl i.on,.jl i.on:before{background:var(--g)}
+details{border-bottom:1px solid var(--ll);padding:18px 0}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:19px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';color:var(--gt);font-size:26px;line-height:1}
+details[open] summary:after{content:'\2212'}
+details p{line-height:1.75;opacity:.8}
+footer{border-top:1px solid var(--ll);padding:30px 0;letter-spacing:.6px;opacity:.75}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.fact{border-inline-start:2px solid var(--g);padding:4px 16px;line-height:1.6}.fact small{display:block;font-size:12px;letter-spacing:.8px;opacity:.65;margin-bottom:3px}
+.rv{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:18px;line-height:1.7}.rv+cite{display:block;font-style:normal;font-weight:600;font-size:14px;margin-top:12px;color:var(--gt)}
+.sch{width:100%;border-collapse:collapse}.sch td,.sch th{padding:14px 10px;border-bottom:1px solid var(--ll);text-align:start}.sch th{font-size:12px;letter-spacing:.8px;opacity:.65;font-weight:600}
+.fl{margin-top:10px}.fl button{background:none;border:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer;margin:0 10px}
+dialog{max-width:640px;width:calc(100% - 32px);border:1px solid #b8914f;border-radius:4px;background:#faf7f1;color:#14213d;padding:30px;max-height:82vh;overflow:auto}
+dialog::backdrop{background:rgba(10,16,30,.65)}
+dialog h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;margin:0 0 12px}dialog p,dialog li{line-height:1.7;font-size:15px}dialog .btn{background:linear-gradient(135deg,#d9b97a,#b8914f);color:#14213d;border-radius:2px;margin-top:10px}
+.tg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;align-items:start}
+.tool{background:var(--lc);border:1px solid var(--ll);border-radius:3px;padding:24px;line-height:1.6}.tool>b{display:block;font-family:Georgia,'Times New Roman',serif;font-weight:500;font-size:20px;margin-bottom:14px}
+.tool .qf{margin-bottom:12px}.tool small{display:block;opacity:.7;margin-top:10px;line-height:1.5}
+.bar{margin:10px 0}.bar span{display:block;font-size:13px;margin-bottom:4px}.bar i{display:block;height:8px;background:var(--g);border-radius:2px}
+#pkmap{width:100%;max-width:560px;height:auto;color:var(--lk);display:block;margin:auto}#pkmap text{fill:currentColor;font-size:10px;font-family:inherit;cursor:pointer}#pkmap circle{fill:#d3202a;cursor:pointer;stroke:#fff;stroke-width:1.5}
+.route{stroke:var(--g);stroke-width:1.6;stroke-dasharray:5 5;animation:dash 2s linear infinite;fill:none}@keyframes dash{to{stroke-dashoffset:-20}}
+.steps{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}.steps span{padding:6px 12px;border:1px solid var(--ll);border-radius:99px;font-size:13px;opacity:.6}.steps span.on{background:var(--g);color:#14213d;border-color:var(--g);opacity:1}
+.wz[hidden]{display:none}
+.fbtn{position:fixed;right:18px;z-index:8;border:0;border-radius:99px;background:var(--card);color:var(--ink);font:600 13px/1 inherit;font-family:inherit;padding:11px 16px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+#hbtn{bottom:calc(134px + env(safe-area-inset-bottom,0px))}#dbtn{bottom:calc(218px + env(safe-area-inset-bottom,0px))}.drone #card{opacity:0!important;pointer-events:none}.past #dbtn{opacity:0;pointer-events:none}.slbl{position:fixed;left:0;top:0;z-index:4;padding:6px 12px;border-radius:99px;background:var(--card);color:var(--ink);font:600 12px/1 inherit;font-family:inherit;box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer;border:0;white-space:nowrap;display:none}#snd{bottom:calc(176px + env(safe-area-inset-bottom,0px));padding:11px 13px}
+#chat{position:fixed;right:18px;bottom:calc(306px + env(safe-area-inset-bottom,0px));width:min(330px,calc(100vw - 36px));max-height:58vh;background:var(--card);color:var(--ink);border-radius:8px;box-shadow:0 12px 36px rgba(0,0,0,.3);z-index:9;display:flex;flex-direction:column;overflow:hidden}#chat[hidden]{display:none}
+#cmsg{padding:14px;overflow:auto;flex:1;font-size:14px;line-height:1.5}#cmsg p{margin:0 0 10px;padding:8px 12px;border-radius:10px;background:rgba(127,127,127,.16);max-width:92%}#cmsg p.u{background:var(--red);color:var(--red-ink);margin-inline-start:auto}
+#cchips{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 10px}#cchips button{border:1px solid var(--red);background:transparent;color:inherit;border-radius:99px;padding:6px 10px;font-size:12px;cursor:pointer}
+#cin{display:flex;border-top:1px solid var(--line);margin:0}#cin input{flex:1;border:0;padding:12px;background:transparent;color:inherit;font:inherit;min-width:0}#cin button{border:0;background:var(--red);color:var(--red-ink);padding:0 16px;cursor:pointer;font-weight:600}
+#cookie{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:10;background:var(--card);color:var(--ink);padding:14px 18px;border-radius:6px;box-shadow:0 10px 30px rgba(0,0,0,.3);display:flex;gap:10px;align-items:center;flex-wrap:wrap;max-width:min(560px,calc(100vw - 24px));font-size:14px}#cookie[hidden]{display:none}
+@media (max-width:600px){.logo{font-size:14px;padding:4px 8px}.btn{padding:9px 11px}#hint{display:none}.nav .btn:not(.ic){display:none}#more{padding:50px 16px 30px}}
+@media (prefers-reduced-motion:reduce){#card{transition:none}}
+</style>
+</head>
+<body>
+<canvas id="stage" aria-label="Interactive 3D map of Zohaib Logistics’ network"></canvas>
+<div id="err">The 3D view is switched off on this connection or device. All services and contact options are below.</div>
+<header><span class="logo">Zohaib Logistics</span><div class='nav'><button class='btn ic' id='lg' aria-label='Language'>اردو</button><button class='btn ic' id='ql' aria-label='Graphics quality'>HD</button><button class='btn ic' id='nt' aria-label='Day or night'>☾</button><a class='btn alt' href='tel:+923093540698' data-k='call'>Call us</a><a class="btn" href="https://wa.me/923168463954?text=Hello%20Zohaib%20Logistics%2C%20I%20would%20like%20a%20quote." target="_blank" rel='noopener' data-k='wa'>WhatsApp</a></div></header>
+<main id="card" aria-live="polite"><h1 id="t"></h1><p id="d"></p><div class="row"><a class="btn" href="https://wa.me/923168463954?text=Hello%20Zohaib%20Logistics%2C%20I%20would%20like%20a%20quote." target="_blank" rel='noopener' data-k='msg'>Message on WhatsApp</a><a class='btn alt' href='tel:+923093540698' data-k='callnum'>Call +92 309 3540698</a></div></main>
+<nav id="dots" aria-label="Network sections"></nav>
+<div id="hint">Scroll to explore</div>
+<div id='scroller'></div>
+<div id='pb'></div><button class='tourb' id='tour'>▶ Tour</button><div id='tip'></div><button class='fbtn' id='hbtn'>Help</button><button class='fbtn' id='dbtn'>🚁 Drone view</button><button class='fbtn' id='snd' aria-label='Sound'>🔇</button>
+<div id='chat' hidden><div id='cmsg'></div><div id='cchips'></div><form id='cin'><input id='ci' placeholder='Ask about quotes, documents, containers…' autocomplete='off'><button>Send</button></form></div>
+<div id='cookie' hidden><span>We use analytics cookies to improve this site.</span><button class='btn' id='cya'>Accept</button><button class='btn alt' id='cno'>Decline</button></div><a class='fab' href='https://wa.me/923168463954?text=Hello%20Zohaib%20Logistics%2C%20I%20would%20like%20a%20quote.' target='_blank' rel='noopener' aria-label='WhatsApp'>💬</a>
+<div id='intro'><span class='logo'>Zohaib Logistics</span><div class='bar'><i></i></div></div>
+<div id='more'>
+<section id='services'><h2 data-k='h_sv'>Our services</h2><div class='grid'>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><path d='M4 28V10h30v18M34 16h12l8 8v4H34M4 28h50'/><circle cx='16' cy='30' r='4'/><circle cx='44' cy='30' r='4'/></svg><b data-k='sv1'>Road freight</b><span data-k='sv1d'>Door-to-door trucking across the country.</span></div>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><path d='M4 22l22-3L16 5h6l16 13 16-2c5 0 7 3 0 6l-16 2-8 11h-6l5-11-24 1z'/></svg><b data-k='sv2'>Air freight</b><span data-k='sv2d'>Fast delivery for urgent and high-value cargo.</span></div>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><path d='M4 26h56l-7 9H11zM14 26V15h12v11M30 26V11h9v15M20 9h4'/></svg><b data-k='sv3'>Sea freight</b><span data-k='sv3d'>Container shipping with customs support.</span></div>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><rect x='4' y='8' width='38' height='20' rx='3'/><path d='M42 14h12l6 8v6H42M4 20h38'/><circle cx='15' cy='32' r='3'/><circle cx='31' cy='32' r='3'/><circle cx='50' cy='32' r='3'/></svg><b data-k='sv4'>Train and intermodal</b><span data-k='sv4d'>Train, road and port in one chain.</span></div>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><path d='M4 17L32 4l28 13v19H4zM14 36V22h36v14M22 36V28h20v8'/></svg><b data-k='sv5'>Warehousing</b><span data-k='sv5d'>Secure storage, handling and distribution.</span></div></div>
+<h3 data-k='h_r'>Pakistan routes</h3><span class='chip'>Karachi Port ↔ Lahore</span><span class='chip'>Karachi ↔ Islamabad</span><span class='chip'>Lahore ↔ Peshawar</span><span class='chip'>Karachi ↔ Quetta</span><span class='chip'>Multan ↔ Faisalabad</span><span class='chip'>Sialkot ↔ Karachi Port</span></section>
+<section id='cargo'><h2 data-k='h_cg'>What we move</h2><div class='grid'><div class='sv'><b data-k='c1'>Textile and garments</b><span data-k='c1d'>Bulk and boxed shipments to ports and buyers.</span></div><div class='sv'><b data-k='c2'>E-commerce parcels</b><span data-k='c2d'>Fast, careful parcel delivery.</span></div><div class='sv'><b data-k='c3'>Pharma and healthcare</b><span data-k='c3d'>Careful handling with temperature control.</span></div><div class='sv'><b data-k='c4'>Machinery and industrial</b><span data-k='c4d'>Planning for heavy and oversize loads.</span></div></div></section>
+<section id='why'><h2 data-k='h_w'>Why choose us</h2><div class='grid'><div class='sv'><b data-k='w1'>One point of contact</b><span data-k='w1d'>Talk to the same person from pickup to delivery.</span></div><div class='sv'><b data-k='w2'>Clear quotes</b><span data-k='w2d'>Share your route and cargo, get a clear quote on WhatsApp.</span></div><div class='sv'><b data-k='w3'>Door to door</b><span data-k='w3d'>We plan the whole chain: road, train, sea and air.</span></div><div class='sv'><b data-k='w4'>Cargo updates</b><span data-k='w4d'>We keep you updated on WhatsApp at every stage.</span></div></div></section>
+<section id='about' hidden><h2 data-k='h_ab'>About us</h2><div class='facts' id='about_f'></div></section>
+<section id='clients' hidden><h2 data-k='h_cl'>Our clients</h2><div id='cl_f'></div></section>
+<section id='reviews' hidden><h2 data-k='h_rv'>What clients say</h2><div class='grid' id='rv_f'></div></section>
+<section id='schedule' hidden><h2 data-k='h_sc'>Departure schedule</h2><table class='sch'><thead><tr><th>Route</th><th>Departure</th></tr></thead><tbody id='sc_f'></tbody></table></section>
+<section id='map'><h2 data-k='h_mp'>Our network across Pakistan</h2><div class='tg'><svg id='pkmap' viewBox='0 0 360 350' role='img' aria-label='Schematic map of Pakistan with freight routes from Karachi'></svg><div class='tool'><b id='mp_t'>Select a city</b><p id='mp_d' style='margin:0 0 12px;opacity:.8'>Click a city on the map to see the route from Karachi, distance and indicative transit time.</p><div id='mp_r'></div><small>Schematic map. Distances are approximate road distances.</small></div></div></section>
+<section id='fleet'><h2 data-k='h_fl'>Container sizes and capacity</h2><div class='grid'>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><rect x='6' y='8' width='52' height='24' rx='2'/><path d='M14 8v24M22 8v24M30 8v24M38 8v24M46 8v24'/></svg><b>20ft container</b><span>Inside about 5.9 x 2.35 x 2.39 m<br>About 33 m³ | up to about 28 t</span></div>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><rect x='2' y='8' width='60' height='24' rx='2'/><path d='M10 8v24M18 8v24M26 8v24M34 8v24M42 8v24M50 8v24'/></svg><b>40ft container</b><span>Inside about 12.0 x 2.35 x 2.39 m<br>About 67 m³ | up to about 26.5 t</span></div>
+<div class='sv'><svg class='ic' viewBox='0 0 64 40' aria-hidden='true'><rect x='2' y='4' width='60' height='28' rx='2'/><path d='M10 4v28M18 4v28M26 4v28M34 4v28M42 4v28M50 4v28'/></svg><b>40ft high cube</b><span>Inside about 12.0 x 2.35 x 2.70 m<br>About 76 m³ | up to about 26.4 t</span></div>
+</div><p style='opacity:.65;font-size:13px;margin-top:14px'>Typical standard figures. Exact capacity depends on the container and the cargo.</p></section>
+<section id='quote'><h2 data-k='h_q'>Quick quote</h2><div class='qf'>
+<label><span data-k='from'>From</span><select id='qf'></select></label>
+<label><span data-k='to'>To</span><select id='qt'></select></label>
+<label><span data-k='kg'>Weight (kg)</span><input id='qw' type='number' min='1' value='500'></label>
+<label><span data-k='mode'>Mode</span><select id='qm'><option value='road' data-k='road'>Road</option><option value='air' data-k='air'>Air</option><option value='sea' data-k='sea'>Sea</option><option value='rail' data-k='rail'>Train</option></select></label>
+<button class='btn' id='qb' data-k='go'>Get estimate</button></div><div id='qr' aria-live='polite'></div></section>
+<section><h2 data-k='h_t'>Track a shipment (demo)</h2><div class='qf'><label><span data-k='tid'>Tracking ID</span><input id='ti' placeholder='ZL-10482'></label><button class='btn' id='tb' data-k='trk'>Track</button></div><div id='tr' aria-live='polite'></div></section>
+<section id='tools'><h2 data-k='h_tl'>Shipping tools</h2><div class='tg'>
+<div class='tool'><b>Container and CBM calculator</b><div class='qf'><label><span>Length (cm)</span><input id='bl' type='number' value='60'></label><label><span>Width (cm)</span><input id='bw' type='number' value='40'></label><label><span>Height (cm)</span><input id='bh' type='number' value='40'></label><label><span>Number of boxes</span><input id='bq' type='number' value='200'></label><label><span>Weight per box (kg)</span><input id='bk' type='number' value='12'></label><button class='btn' id='bgo'>Calculate</button></div><div id='bout'></div></div>
+<div class='tool'><b>Carbon footprint by mode</b><div class='qf'><label><span>From</span><select id='kf'></select></label><label><span>To</span><select id='kt'></select></label><label><span>Weight (kg)</span><input id='kw' type='number' value='5000'></label><button class='btn' id='kgo'>Compare</button></div><div id='kout'></div></div>
+<div class='tool'><b>Documents checklist</b><div class='qf'><label><span>Shipment type</span><select id='dd'><option value='export'>Export from Pakistan</option><option value='import'>Import into Pakistan</option><option value='domestic'>Domestic movement</option></select></label><label><span>Mode</span><select id='dm'><option>Road</option><option>Air</option><option>Sea</option><option>Train</option></select></label><button class='btn' id='dgo'>Show checklist</button></div><div id='dout'></div></div>
+</div></section>
+<section id='book'><h2 data-k='h_bk'>Book a shipment</h2><div class='tool'><div class='steps' id='wst'><span class='on'>1 Route</span><span>2 Cargo</span><span>3 Date</span><span>4 Contact</span></div>
+<div class='wz' data-s='1'><div class='qf'><label><span>From</span><select id='wf'></select></label><label><span>To</span><select id='wt'></select></label><label><span>Mode</span><select id='wm'><option value='road'>Road</option><option value='air'>Air</option><option value='sea'>Sea</option><option value='train'>Train</option></select></label></div></div>
+<div class='wz' data-s='2' hidden><div class='qf'><label><span>Cargo type</span><select id='wcg'><option>Textile</option><option>E-commerce</option><option>Pharma</option><option>Machinery</option><option>Other</option></select></label><label><span>Weight (kg)</span><input id='ww' type='number'></label><label><span>Details (size, packing)</span><input id='wd2'></label><label><span>Documents (optional)</span><input id='wfi' type='file' multiple></label></div><small style='opacity:.65'>Files are not uploaded by this form. You attach them in the WhatsApp chat that opens.</small></div>
+<div class='wz' data-s='3' hidden><div class='qf'><label><span>Preferred pickup date</span><input id='wdt' type='date'></label></div></div>
+<div class='wz' data-s='4' hidden><div class='qf'><label><span>Your name</span><input id='wn'></label><label><span>Phone</span><input id='wp' type='tel'></label></div></div>
+<div class='row2'><button class='btn alt' id='wback'>Back</button><button class='btn' id='wnext'>Next</button></div><div id='wout' style='margin-top:10px'></div></div></section>
+<section id='insights'><h2 data-k='h_in'>Freight guides</h2>
+<details><summary>Road, train, sea or air: how to choose</summary><p>Road is the most flexible for door-to-door delivery on short and medium distances. Train suits heavy, regular volumes between big hubs and usually costs less per tonne. Sea freight is the cheapest way to move large volumes overseas but takes the longest. Air is the fastest and the most expensive, best for urgent or high-value cargo. Many shipments combine two or more modes.</p></details>
+<details><summary>What is CBM and how do I calculate it?</summary><p>CBM means cubic metre, the space your cargo takes up. For one box, multiply length x width x height in metres, then multiply by the number of boxes. Carriers often charge by the greater of actual weight and volume weight, so light but bulky cargo can cost more than you expect. Use the calculator above for a quick answer.</p></details>
+<details><summary>Documents you usually need to export from Pakistan</summary><p>Most export shipments need a commercial invoice, a packing list, a bill of lading or air waybill, and a goods declaration filed with customs. Some products also need a certificate of origin or special permits. Ask us early so the paperwork is ready before the cargo moves.</p></details>
+<details><summary>How to pack cargo to avoid damage</summary><p>Use strong cartons or crates sized for the goods, fill empty space and keep heavy items at the bottom. Put goods on pallets when possible, wrap them tightly, and label every package with the destination and a contact number. Photograph the packed cargo before it leaves.</p></details></section>
+<section id='cases' hidden><h2 data-k='h_cs'>Case studies</h2><div class='grid' id='cs_f'></div></section>
+<section id='jobs' hidden><h2 data-k='h_jb'>Careers</h2><div class='grid' id='jb_f'></div></section>
+<section id='partner'><h2 data-k='h_pt'>Partner with us</h2><p style='max-width:640px;line-height:1.7;opacity:.8' data-k='pt_d'>Own a truck or trailer? Tell us your vehicle and routes and we will get in touch if a matching load comes up.</p><div class='qf'><label><span data-k='nm'>Your name</span><input id='pn'></label><label><span data-k='ph'>Phone</span><input id='pp' type='tel'></label><label><span data-k='vt'>Vehicle type</span><select id='pt'><option>Truck</option><option>Container trailer</option><option>Refrigerated truck</option><option>Pickup or van</option></select></label><label><span data-k='rt'>Routes you cover</span><input id='pr'></label><button class='btn' id='pb2' data-k='send'>Send on WhatsApp</button></div></section>
+<section><h2 data-k='h_f'>Frequently asked questions</h2>
+<details><summary data-k='q1'>Which routes do you cover?</summary><p data-k='a1'>Send us your pickup and delivery points on WhatsApp and we will confirm what is possible.</p></details>
+<details><summary data-k='q2'>How do I get a quote?</summary><p data-k='a2'>Use the quick quote form above, or message us on WhatsApp with the route, weight and cargo type.</p></details>
+<details><summary data-k='q3'>Can I track my shipment?</summary><p data-k='a3'>Tracking on this page is a demo. Live updates are shared by our team on WhatsApp.</p></details></section>
+<section id='contact'><h2 data-k='h_c'>Contact us</h2><div class='qf'><label><span data-k='nm'>Your name</span><input id='cn'></label><label><span data-k='ph'>Phone</span><input id='cp' type='tel'></label><label><span data-k='cg'>Cargo type</span><select id='cc'><option>Textile</option><option>E-commerce</option><option>Pharma</option><option>Machinery</option><option>Other</option></select></label><label><span data-k='ms'>Message</span><input id='cm'></label><button class='btn' id='cb' data-k='send'>Send on WhatsApp</button></div><div class='row2'><a class='btn' href='https://wa.me/923168463954?text=Hello%20Zohaib%20Logistics%2C%20I%20would%20like%20a%20quote.' target='_blank' rel='noopener' data-k='msg'>Message on WhatsApp</a><a class='btn alt' href='tel:+923093540698' data-k='callnum'>Call +92 309 3540698</a></div></section>
+<footer>© Zohaib Logistics · +92 309 3540698 · WhatsApp 0316 8463954<div class='fl'><button id='bp'>Privacy policy</button><button id='bt'>Terms of service</button></div></footer></div>
+<dialog id='dp'><h2>Privacy policy</h2><p>Last updated: October 2026.</p><p><b>What we collect.</b> Details you type into our forms (name, phone, cargo and route information, message). They are used only to prepare your enquiry to us on WhatsApp and, if a form service is connected, to record it so our team can follow up.</p><p><b>Analytics.</b> If enabled, we use Google Analytics or Microsoft Clarity to understand how the site is used. These services may set cookies and receive anonymous usage data.</p><p><b>Sharing.</b> We do not sell your data. We share it only with partners needed to move your shipment, such as carriers and customs agents, and where the law requires it.</p><p><b>Your choices.</b> Ask us to correct or delete your enquiry details by contacting us on +92 309 3540698 or WhatsApp 0316 8463954.</p><form method='dialog'><button class='btn'>Close</button></form></dialog>
+<dialog id='dt'><h2>Terms of service</h2><p>Last updated: October 2026.</p><ul><li>Transit times and prices shown on this site are indicative. A booking is confirmed only when we confirm the price, route and cargo details in writing or on WhatsApp.</li><li>You must describe your cargo accurately and must not ship prohibited or dangerous goods without prior written agreement.</li><li>Delivery times can change because of weather, customs, traffic or other events outside our control.</li><li>Liability for loss or damage is limited as set out in the booking confirmation. We recommend cargo insurance for valuable goods.</li><li>Claims must be reported promptly after delivery, with photos and documents.</li><li>These terms are governed by the laws of Pakistan.</li></ul><form method='dialog'><button class='btn'>Close</button></form></dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+/* ===== EDIT ME: business details. Any empty field stays hidden on the site. ===== */
+var CFG={address:'',hours:'',ntn:'',clients:[],reviews:[],schedule:[],cases:[],jobs:[],brochure:'',formUrl:'',trackUrl:'',gaId:'',clarityId:''};
+/* clients: ['Name 1','Name 2']  reviews: [{n:'Name, Company',t:'Review text'}]  schedule: [{r:'Karachi to Lahore',d:'Every Tuesday'}] */
+var S=[
+{x:0,  cam:[9,9,31], lz:8, t:"Zohaib Logistics – your forwarding partner for transport and logistics", d:"Warehousing, handling and distribution under one roof, with every pallet tracked from dock to door."},
+{x:50, cam:[24,24,26], t:"Road freight, door to door", d:"Scheduled routes and full-load trucks across the country. You always know where your cargo is."},
+{x:100,cam:[18,16,20], t:"Air freight when time matters", d:"Direct and connecting flights for urgent, high-value and temperature-sensitive shipments."},
+{x:150,cam:[20,18,22], t:"Sea freight to every major port", d:"Container and bulk shipping with customs support handled by one team."},
+{x:200,cam:[18,17,19], t:"Train and intermodal", d:"Combine train, road and port into one chain: more capacity and fewer emissions per tonne."},
+{x:250,cam:[18,16,20], t:"Cold chain logistics", d:"Temperature-controlled storage and transport for food and pharma."},
+{x:300,cam:[19,17,20], t:"Last-mile delivery", d:"Vans and bikes that bring your cargo to the final doorstep."},
+{x:350,cam:[10,11,37], lz:3, ly:6, t:"Let’s move your cargo", d:"Tell us about your shipment and our team will plan the route with you."}
+];
+var L='en',SU=[['ذوہیب لاجسٹکس – ٹرانسپورٹ اور لاجسٹکس میں آپ کا فارورڈنگ پارٹنر','ویئر ہاؤسنگ، ہینڈلنگ اور ڈسٹری بیوشن ایک چھت تلے، ہر پیلٹ ڈاک سے دروازے تک ٹریک ہوتا ہے۔'],['روڈ فریٹ، دروازے تک','ملک بھر میں شیڈولڈ روٹس اور فل لوڈ ٹرک۔ آپ کو ہمیشہ پتا ہوتا ہے آپ کا مال کہاں ہے۔'],['ایئر فریٹ جب وقت اہم ہو','ارجنٹ، قیمتی اور درجۂ حرارت کے لحاظ سے حساس شپمنٹس کے لیے ڈائریکٹ اور کنیکٹنگ فلائٹس۔'],['ہر بڑی بندرگاہ تک سی فریٹ','کنٹینر اور بلک شپنگ، کسٹمز سپورٹ کے ساتھ، ایک ہی ٹیم کے ذریعے۔'],['ٹرین اور انٹرموڈل','ٹرین، روڈ اور پورٹ کو ایک چین میں جوڑیں: زیادہ گنجائش اور فی ٹن کم اخراج۔']];
+SU.push(['کولڈ چین لاجسٹکس','خوراک اور ادویات کے لیے درجۂ حرارت کنٹرول اسٹوریج اور ٹرانسپورٹ۔'],['آخری میل کی ڈیلیوری','وین اور موٹر سائیکل آپ کا مال آخری دروازے تک پہنچاتے ہیں۔']);
+SU.push(['آئیے آپ کا مال پہنچائیں','اپنی شپمنٹ کے بارے میں بتائیں، ہماری ٹیم آپ کے ساتھ روٹ طے کرے گی۔']);
+var cv=document.getElementById('stage'),ren;
+try{if(navigator.connection&&(navigator.connection.saveData||/2g/.test(navigator.connection.effectiveType||'')))throw 0;ren=new THREE.WebGLRenderer({canvas:cv,antialias:true});}catch(e){document.getElementById('err').style.display='block';['scroller','card','dots','hint','tip'].forEach(function(i){var e=document.getElementById(i);if(e)e.style.display='none';});return;}
+ren.setPixelRatio(Math.min(devicePixelRatio,2));
+ren.shadowMap.enabled=true;ren.shadowMap.type=THREE.PCFSoftShadowMap;
+var scene=new THREE.Scene(),BG=0xcfe3ee;scene.background=new THREE.Color(BG);scene.fog=new THREE.Fog(BG,75,200);
+var cam=new THREE.PerspectiveCamera(38,1,.5,400);
+var hemi=new THREE.HemisphereLight(0xffffff,0xb8cfc0,.78);scene.add(hemi);
+var sun=new THREE.DirectionalLight(0xffffff,.85);sun.castShadow=true;
+sun.shadow.mapSize.set(innerWidth<700?1024:2048,innerWidth<700?1024:2048);
+var sc=sun.shadow.camera;sc.left=-36;sc.right=36;sc.top=36;sc.bottom=-36;sc.near=1;sc.far=150;sun.shadow.bias=-.0007;
+scene.add(sun);scene.add(sun.target);
+
+var seed=7;function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647;}
+var RED=0xd3202a,WHITE=0xf7f7f7,GREY=0xc9ced1,DARK=0x3a3f44,WOOD=0xc9a27a,GLASS=0x46525c,TIRE=0x25292d,YEL=0xf2c14e,LAMP=0xfff3b0;
+function M(c){return new THREE.MeshLambertMaterial({color:c,flatShading:true});}
+function prim(g,c,x,y,z,p,o){o=o||{};var m=new THREE.Mesh(g,M(c));m.castShadow=!o.nc;m.receiveShadow=true;m.position.set(x,y,z);
+  if(o.rx)m.rotation.x=o.rx;if(o.ry)m.rotation.y=o.ry;if(o.rz)m.rotation.z=o.rz;(p||scene).add(m);return m;}
+function box(w,h,d,c,x,y,z,p,o){return prim(new THREE.BoxGeometry(w,h,d),c,x,y,z,p,o);}
+function cyl(rt,rb,h,c,x,y,z,p,o){return prim(new THREE.CylinderGeometry(rt,rb,h,(o&&o.s)||14),c,x,y,z,p,o);}
+function cone(r,h,c,x,y,z,p,o){return prim(new THREE.ConeGeometry(r,h,(o&&o.s)||8),c,x,y,z,p,o);}
+function wheel(p,x,y,z,r){cyl(r,r,.3,TIRE,x,y,z,p,{rx:Math.PI/2,s:12});}
+function tree(x,z,p,s){s=s||1;var r=rnd(),G=[0x3f7d3a,0x4f9a45,0x2f6b3a,0x5aa84c,0x6aa84f],gc=G[Math.floor(rnd()*G.length)],tk=0x6b4a2f,g=new THREE.Group(),k;
+ if(r<.55){var h=1.1*s;cyl(.1*s,.17*s,h,tk,0,h/2,0,g,{s:6,nc:1});
+  var n=3+Math.floor(rnd()*2);for(k=0;k<n;k++){var a=k/n*6.28+rnd(),d=k?.55*s:0,m=prim(new THREE.IcosahedronGeometry((k?.62:.8)*s,1),gc,Math.cos(a)*d,h+.5*s+(k?-.12*s:.15*s),Math.sin(a)*d,g,k?{nc:1}:{});m.scale.y=.85;m.rotation.y=rnd()*3;}
+  prim(new THREE.IcosahedronGeometry(.5*s,0),0x2a5a2c,0,h+.1*s,0,g,{nc:1});}
+ else if(r<.8){var h2=.7*s;cyl(.09*s,.13*s,h2,tk,0,h2/2,0,g,{s:6,nc:1});for(k=0;k<3;k++)cone((1-k*.25)*.95*s,1.25*s,k%2?0x2d6a3a:0x265c34,0,h2+.45*s+k*.7*s,0,g,{s:7,nc:k?1:0});}
+ else if(r<.92){var h3=.9*s;cyl(.08*s,.12*s,h3,tk,0,h3/2,0,g,{s:6,nc:1});var q=prim(new THREE.IcosahedronGeometry(.55*s,1),gc,0,h3+1.3*s,0,g);q.scale.set(.8,2.4,.8);}
+ else{var h4=2.6*s;cyl(.07*s,.13*s,h4,0x8a6a4f,0,h4/2,0,g,{s:6,nc:1});for(k=0;k<7;k++){var fr=new THREE.Group();fr.rotation.y=k/7*6.28;var f=box(1.5*s,.04,.3*s,0x4f9a45,.75*s,0,0,fr,{nc:1});f.rotation.z=-.35;fr.position.y=h4;g.add(fr);}}
+ g.position.set(x,0,z);g.rotation.y=rnd()*6;(p||scene).add(g);}
+function treeOld(x,z,p,s){s=s||1;var a=rnd()>.5?0x2fb09a:0x4fc4ae;
+  cyl(.12*s,.16*s,.8*s,0x8a6a4f,x,.4*s,z,p,{s:6,nc:true});prim(new THREE.IcosahedronGeometry(.95*s,1),a,x,1.9*s,z,p);}
+function house(x,z,p,ry){var g=new THREE.Group();box(2,1.4,1.6,WHITE,0,.7,0,g);cone(1.6,1,RED,0,1.9,0,g,{s:4,ry:Math.PI/4});box(.5,.8,.05,DARK,0,.4,.83,g,{nc:1});box(.5,.4,.05,GLASS,.65,.9,.83,g,{nc:1});g.position.set(x,.15,z);g.rotation.y=ry||0;p.add(g);}
+function ctn(p,x,y,z,c,w,d){w=w||3.4;d=d||2.8;box(w,1.1,d,c,x,y,z,p);box(w+.02,.08,d+.02,new THREE.Color(c).multiplyScalar(.78).getHex(),x,y+.55,z,p,{nc:1});box(.06,.95,d-.4,new THREE.Color(c).multiplyScalar(.85).getHex(),x+w/2,y,z,p,{nc:1});}
+
+function mkHook(parent,w,col,d){var hk=new THREE.Group(),cb=box(.08,1,.08,DARK,0,-.5,0,parent,{nc:1});ctn(hk,0,0,0,col,w,d);parent.add(hk);return {hk:hk,cb:cb};}
+function addCab(t){
+  box(1.5,1.9,1.8,RED,2.3,1.9,0,t);box(.06,.95,1.6,GLASS,3.07,2.35,0,t,{nc:1,rz:.2});box(.9,.65,.04,GLASS,2.45,2.3,.91,t,{nc:1});box(.9,.65,.04,GLASS,2.45,2.3,-.91,t,{nc:1});
+  box(1.3,.12,1.7,RED,2.2,2.9,0,t);box(1.1,.12,1.7,RED,1.95,3.3,0,t,{rz:-.45});
+  box(.08,1.0,1.5,0x2b2f33,3.07,1.35,0,t,{nc:1});box(.05,.08,1.4,0xcfd3d6,3.1,1.65,0,t,{nc:1});box(.25,.3,1.8,DARK,3.1,.6,0,t);
+  [-.65,.65].forEach(function(z){box(.06,.22,.35,LAMP,3.09,1.05,z,t,{nc:1});});
+  [1.03,-1.03].forEach(function(z){box(.12,.45,.1,DARK,2.9,2.3,z,t,{nc:1});});
+  cyl(.06,.06,1.5,0xaab0b5,1.55,2.3,.88,t,{s:6,nc:1});[1,-1].forEach(function(s){cyl(.3,.3,1.2,0xc8ccd0,2.0,.8,s*1.0,t,{rz:Math.PI/2,s:10,nc:1});});
+  box(7.4,.25,1.0,DARK,-.3,.72,0,t,{nc:1});box(.9,.12,1.1,DARK,1.2,.95,0,t,{nc:1});
+  wheel(t,2.7,.42,.82,.42);wheel(t,2.7,.42,-.82,.42);[1.4,.7].forEach(function(x){[.82,.5,-.5,-.82].forEach(function(z){wheel(t,x,.42,z,.42);});});}
+function mkFlat(){var t=new THREE.Group();addCab(t);box(5.4,.25,1.9,DARK,-1.4,.98,0,t);[.93,-.93].forEach(function(z){box(5.42,.1,.1,GREY,-1.4,1.13,z,t,{nc:1});});[-.7,.7].forEach(function(z){box(.05,.2,.25,0xff2a2a,-4.12,1.0,z,t,{nc:1});});box(.1,.15,1.7,DARK,-4.2,.7,0,t,{nc:1});[-2.5,-3.1,-3.7].forEach(function(x){[.82,.5,-.5,-.82].forEach(function(z){wheel(t,x,.42,z,.42);});});t.userData.info='truck';t.scale.setScalar(.8);return t;}
+function mkFlatOld(){var t=new THREE.Group();box(5.2,.3,1.4,DARK,0,.75,0,t);box(1.3,1.5,1.5,RED,1.9,1.35,0,t);box(.06,.7,1.25,GLASS,2.56,1.6,0,t,{nc:1});[1.9,-.7,-1.8].forEach(function(x){wheel(t,x,.34,.82,.34);wheel(t,x,.34,-.82,.34);});[-.5,.5].forEach(function(z){box(.05,.2,.3,LAMP,2.57,.95,z,t,{nc:1});});t.scale.setScalar(.6);t.userData.info='truck';return t;}
+function mkFork(){var f=new THREE.Group();box(1.7,.8,1,RED,0,.7,0,f);box(.6,.6,.9,DARK,-.6,1.3,0,f,{nc:1});[[-.9,.45],[-.9,-.45],[.3,.45],[.3,-.45]].forEach(function(a){box(.08,1,.08,DARK,a[0],1.6,a[1],f,{nc:1});});box(1.3,.08,1.1,DARK,-.3,2.1,0,f);box(.14,2.2,.9,DARK,1.0,1.25,0,f);box(.9,.08,.14,DARK,1.4,.35,.3,f,{nc:1});box(.9,.08,.14,DARK,1.4,.35,-.3,f,{nc:1});[[.6,.55],[.6,-.55],[-.6,.55],[-.6,-.55]].forEach(function(a){wheel(f,a[0],.28,a[1],.28);});var pl=new THREE.Group();box(1.1,.15,1,0xa9814f,0,0,0,pl);box(1,.8,.9,WOOD,0,.5,0,pl);pl.position.set(1.55,.47,0);f.add(pl);f.pallet=pl;f.scale.setScalar(1.15);f.userData.info='fork';return f;}
+function hookCycle(tr,h,z0,z1,hR,hL0,hL1,tt,sp){var ph=((tt*sp)%1)*2,go=ph<1,lg=ph%1,a=go?z0:z1,b=go?z1:z0,la=go?hL0:hL1,lb=go?hL1:hL0,yc,u=Math.max(0,Math.min(1,(lg-.2)/.6));
+ if(lg<.2)yc=la+(hR-la)*ss(lg/.2);else if(lg<.8)yc=hR;else yc=hR+(lb-hR)*ss((lg-.8)/.2);
+ tr.position.z=a+(b-a)*ss(u);h.hk.position.y=yc;var len=-(yc+.6);h.cb.scale.y=len;h.cb.position.y=-len/2;}
+var FL=[[0,-64,8.5,6,0,-.13],[5,-40,5.3,6,0,-.12],[8,-24,3,6,0,-.1],[10,-14,1.95,6,0,-.03],[15,-3,1.95,6,0,0],[17.5,2.5,1.95,6,0,0],[19,4.8,1.95,5.2,.6,0],[20.5,6.2,1.95,3.4,1.15,0],[22,6.4,1.95,1.2,1.57,0],[23.5,5.8,1.95,-1,2.1,0],[25,4,1.95,-2.2,2.7,0],[26.5,2,1.95,-2.4,3.14,0],[27.5,2,1.95,-2.4,3.14,0],[35,2,1.95,-2.4,3.14,0],[36,2,1.95,-2.4,3.14,0],[38,-2,1.95,-2.4,3.14,0],[41,-8,1.95,-2,3.5,0],[43.5,-12.5,1.95,-.4,4.1,0],[45.5,-15.2,1.95,2.2,4.71,0],[47.5,-15.2,1.95,4.6,5.4,0],[49,-12.5,1.95,6,6.28,0],[53,-8,1.95,6,6.28,0],[56,2,1.95,6,6.28,0],[58,12,2.9,6,6.28,.14],[62,30,9.5,6,6.28,.22],[66,54,18,6,6.28,.2],[70,80,26,6,6.28,.2]];
+function cr(a,b,c,d,u){return .5*((2*b)+(-a+c)*u+(2*a-5*b+4*c-d)*u*u+(-a+3*b-3*c+d)*u*u*u);}
+function flyPlane(pl,tt){var t=tt%70,n=FL.length,i=0;while(i<n-2&&FL[i+1][0]<=t)i++;var a=FL[Math.max(i-1,0)],b=FL[i],c=FL[i+1],d=FL[Math.min(i+2,n-1)],u=(t-b[0])/(c[0]-b[0]);
+ pl.position.set(cr(a[1],b[1],c[1],d[1],u),Math.max(1.95,cr(a[2],b[2],c[2],d[2],u)),cr(a[3],b[3],c[3],d[3],u));pl.rotation.y=cr(a[4],b[4],c[4],d[4],u);pl.rotation.z=cr(a[5],b[5],c[5],d[5],u);pl.gear.visible=pl.position.y<7;}
+/* ground + stations */
+box(900,.2,520,0x6a9448,170,-.2,-60,scene,{nc:1});
+[[-30,118],[170,370]].forEach(function(r){var c=(r[0]+r[1])/2,l=r[1]-r[0];box(l,.12,8,0x6f9f4f,c,-.04,16,scene,{nc:1});box(l,.05,3.2,0x474d54,c,.015,16,scene,{nc:1});box(l,.01,.12,WHITE,c,.045,16,scene,{nc:1});});
+S.forEach(function(s){
+  s.g=new THREE.Group();s.g.position.set(s.x,0,0);scene.add(s.g);
+  box(34.8,.25,28.8,0x9c998f,0,-.02,0,s.g,{nc:1});
+  box(34,.3,28,0xc2bfb6,0,0,0,s.g,{nc:1});
+  for(var i=0;i<24;i++){var a=rnd()*6.28,r=20+rnd()*10,tx=Math.cos(a)*r,tz=Math.sin(a)*r*.8-2,sz=.8+rnd()*.7;if(s.x===150&&tz>-3&&tx>-34&&tx<21)continue;if(Math.abs(tz-16)<5)continue;if(s.x===0&&tz>13&&Math.abs(tx)<5)continue;if(s.x===150&&Math.abs(tz+4.5)<3)continue;if(s.x===200&&(Math.abs(tz)<9||Math.abs(tz-8)<2)&&Math.abs(tx)<42)continue;if(s.x===350&&tz>-2&&Math.abs(tx)<20)continue;if(s.x===300&&(Math.abs(tz)<3.5||Math.abs(tx)<3.5)&&Math.abs(tx)<40&&Math.abs(tz)<16)continue;tree(tx,tz,s.g,sz);}
+});
+
+/* 0 warehouse */
+var fork;
+(function(g){
+  box(30,.2,22,0xe9ecee,0,.25,0,g,{nc:1});
+  [-3.8,.6,5].forEach(function(z){box(28,.02,.14,YEL,0,.37,z,g,{nc:1});});
+  box(.6,6,22,WHITE,-15,3,0,g);box(30,6,.6,WHITE,0,3,-11,g);
+  box(.7,.8,22.2,RED,-15,6.2,0,g);box(30,.8,.7,RED,0,6.2,-11,g);
+  var i;for(i=0;i<5;i++)box(3.6,1.2,.1,GLASS,-10+i*5,4,-10.65,g,{nc:1});
+  for(i=0;i<4;i++){box(3,.3,.3,RED,-6+i*4,2.6,10.9,g);}
+  var cc=[WOOD,WOOD,WHITE,GREY,RED];
+  for(var r=0;r<4;r++)for(var c=0;c<5;c++){
+    var x=-9+c*5.2,z=-6+r*4.4;
+    box(4.4,.2,1.8,GREY,x,.4,z,g,{nc:1});
+    for(var l=0;l<3;l++){box(4.4,.15,1.8,GREY,x,.4+l*1.5+1.5,z,g,{nc:1});
+      for(var k=0;k<3;k++)if(rnd()>.15)box(1.1+rnd()*.2,.9+rnd()*.2,1.3,cc[Math.floor(rnd()*5)],x-1.5+k*1.5,.4+l*1.5+.65,z,g);}
+    for(var p=0;p<2;p++)for(var q=0;q<2;q++)box(.15,5,.15,RED,x-2.15+p*4.3,2.8,z-.8+q*1.6,g,{nc:1});
+  }
+  for(i=0;i<6;i++){if(i===2||i===3)continue;var px=-9+i*3.6;box(1.6,.2,1.6,0xa9814f,px,.45,9.2,g);box(1.4,1.2,1.4,cc[i%5],px,1.15,9.2,g);}
+  fork=new THREE.Group();
+  box(1.7,.8,1,RED,0,.7,0,fork);box(.6,.6,.9,DARK,-.6,1.3,0,fork,{nc:1});
+  [[-.9,.45],[-.9,-.45],[.3,.45],[.3,-.45]].forEach(function(a){box(.08,1,.08,DARK,a[0],1.6,a[1],fork,{nc:1});});
+  box(1.3,.08,1.1,DARK,-.3,2.1,0,fork);box(.14,2.2,.9,DARK,1.0,1.25,0,fork);box(.9,.08,.14,DARK,1.4,.35,.3,fork,{nc:1});box(.9,.08,.14,DARK,1.4,.35,-.3,fork,{nc:1});
+  wheel(fork,.6,.28,.55,.28);wheel(fork,.6,.28,-.55,.28);wheel(fork,-.6,.28,.55,.28);wheel(fork,-.6,.28,-.55,.28);
+  var pl=new THREE.Group();box(1.1,.15,1,0xa9814f,0,0,0,pl);box(1,.8,.9,WOOD,0,.5,0,pl);pl.position.set(1.55,.47,0);fork.add(pl);fork.pallet=pl;fork.userData.info='fork';fork.scale.setScalar(1.15);fork.position.set(0,.35,.6);g.add(fork);
+})(S[0].g);
+
+/* 0b dock trucks, loading cycle, people */
+var dockT=[],dockF,walkers=[],signallers=[];
+function dockAnim(tt){
+ dockT.forEach(function(t){var c=(tt+t.ph)%24,z;if(c<6)z=36-21.4*ss(c/6);else if(c<16)z=14.6;else if(c<22)z=14.6+21.4*ss((c-16)/6);else z=36;t.position.z=z;});
+ var f=dockF,s0=(tt+dockT[0].ph)%24,s1=(tt+dockT[1].ph)%24,d=null,u=0;
+ if(s0>=6&&s0<16){d=dockT[0];u=(s0-6)/10;}else if(s1>=6&&s1<16){d=dockT[1];u=(s1-6)/10;}
+ if(d){var s=(u*3)%1,go=s<.5,e=go?s*2:(1-s)*2;f.position.set(d.dx,.35,8.9+1.4*ss(e));f.rotation.y=go?-Math.PI/2:Math.PI/2;f.pallet.visible=go;}else{f.position.set(0,.35,8.9);f.rotation.y=Math.PI/2;f.pallet.visible=false;}
+ walkers.forEach(function(w,i){var a=tt*.3+i*2,v=Math.cos(a),s=Math.sin(tt*9+i)*.55*Math.min(1,Math.abs(v)*2.5);w.position.set(w.bx,.15,17.5+Math.sin(a)*4.5);w.rotation.y=v>0?-Math.PI/2:Math.PI/2;w.legL.rotation.z=s;w.legR.rotation.z=-s;w.armL.rotation.z=-s*.9;w.armR.rotation.z=s*.9;});
+ signallers.forEach(function(p,i){var t=dockT[i],c=(tt+t.ph)%24,mv=(c<6)||(c>=16&&c<22);p.armL.rotation.x=mv?-(2+Math.abs(Math.sin(tt*5))*.5):0;});}
+function flatAnim(tt){var c=tt%20,x;if(c<8)x=-40+40.45*ss(c/8);else if(c<12)x=.45;else if(c<19)x=.45+40*ss((c-12)/7);else x=40.45;
+ flat.position.x=x;tcn.visible=c>=9.7;tcn.position.set(x-.45,1.24,8.4);gph.hk.visible=c<9.7;ys.visible=c>=15;}
+(function(g){
+  [-6,6].forEach(function(x){var t=mkTruck();t.rotation.y=-Math.PI/2;t.position.set(x,.15,14.6);g.add(t);});
+  [-2,2].forEach(function(x,i){var t=mkTruck();t.rotation.y=-Math.PI/2;t.position.set(x,.15,36);t.ph=i*12;t.dx=x;g.add(t);dockT.push(t);box(3.4,.1,24,0x474d54,x,0,26,g,{nc:1});});
+  dockF=mkFork();dockF.position.set(0,.35,8.9);g.add(dockF);
+  box(30,2.6,.5,RED,0,4.9,10.9,g);
+  var cn=document.createElement('canvas');cn.width=1024;cn.height=128;var cx=cn.getContext('2d');cx.fillStyle='#d3202a';cx.fillRect(0,0,1024,128);cx.fillStyle='#fff';cx.font='bold 84px Arial';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('Zohaib Logistics',512,68);
+  var sg=new THREE.Mesh(new THREE.PlaneGeometry(16,2),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(cn)}));sg.position.set(0,4.9,11.2);g.add(sg);
+  function person(x,z,o){o=o||{};var P=new THREE.Group(),sk=o.skin||0xe8c9a0,sh=o.shirt||0x3c4a63,tr=0x2b3445,vest=o.vest||0xf28c28,hat=o.hat===undefined?0xf7f7f7:o.hat;
+    function lim(px,py,pz,w,h,d,c){var gr=new THREE.Group();gr.position.set(px,py,pz);box(w,h,d,c,0,-h/2,0,gr);P.add(gr);return gr;}
+    var lL=lim(0,.85,.1,.17,.8,.17,tr),lR=lim(0,.85,-.1,.17,.8,.17,tr);box(.3,.1,.2,0x15181c,.04,-.75,0,lL);box(.3,.1,.2,0x15181c,.04,-.75,0,lR);
+    box(.24,.6,.42,sh,0,1.15,0,P);box(.26,.58,.44,vest,0,1.15,0,P);box(.27,.05,.45,0xe6e6e6,0,1.0,0,P,{nc:1});box(.27,.05,.45,0xe6e6e6,0,1.28,0,P,{nc:1});
+    var aL=lim(0,1.42,.28,.11,.55,.11,sh),aR=lim(0,1.42,-.28,.11,.55,.11,sh);box(.1,.1,.1,sk,0,-.6,0,aL,{nc:1});box(.1,.1,.1,sk,0,-.6,0,aR,{nc:1});
+    box(.1,.08,.1,sk,0,1.5,0,P,{nc:1});prim(new THREE.SphereGeometry(.14,10,8),sk,0,1.65,0,P,{nc:1});
+    prim(new THREE.SphereGeometry(.16,10,6,0,Math.PI*2,0,Math.PI/2),hat,0,1.7,0,P,{nc:1});box(.3,.03,.3,hat,.06,1.7,0,P,{nc:1});
+    box(.02,.03,.04,0x222222,.135,1.67,.05,P,{nc:1});box(.02,.03,.04,0x222222,.135,1.67,-.05,P,{nc:1});
+    P.legL=lL;P.legR=lR;P.armL=aL;P.armR=aR;P.scale.setScalar(.6);P.position.set(x,.15,z);P.rotation.y=o.ry||0;g.add(P);return P;}
+  person(-8.4,15.4,{ry:Math.PI/2,hat:0xf7f7f7});person(-7.6,15.7,{ry:Math.PI/2+.4,hat:RED,vest:0xd7e03b,skin:0xc99a72});person(8.3,15.3,{ry:Math.PI/2,hat:0xf2c14e,skin:0x8d5a3c});person(.2,13.4,{ry:Math.PI,hat:0xf7f7f7,shirt:0x7a1f24});
+  dockT.forEach(function(t){signallers.push(person(t.dx+1.5,15.4,{ry:Math.PI,hat:0xf2c14e}));});
+  walkers.push(person(-11.5,17.5,{hat:0xf7f7f7,vest:0xd7e03b}),person(11.5,17.5,{hat:RED,skin:0xc99a72}));walkers.forEach(function(w){w.bx=w.position.x;});
+})(S[0].g);
+/* 1 road */
+var curve=new THREE.CatmullRomCurve3([[-16,.15,-12],[-6,.15,-9],[2,.15,-4],[-5,.15,1],[3,.15,6],[11,.15,8],[17,.15,13]].map(function(a){return new THREE.Vector3(a[0],a[1],a[2]);}));
+function ribbon(w,y,col,g){var n=140,pos=[],idx=[];
+  for(var i=0;i<=n;i++){var t=i/n,p=curve.getPoint(t),tg=curve.getTangent(t),nx=-tg.z,nz=tg.x,l=Math.hypot(nx,nz)||1;
+    pos.push(p.x+nx/l*w,y,p.z+nz/l*w,p.x-nx/l*w,y,p.z-nz/l*w);if(i<n){var a=i*2;idx.push(a,a+1,a+2,a+1,a+3,a+2);}}
+  var geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));geo.setIndex(idx);geo.computeVertexNormals();
+  var m=new THREE.Mesh(geo,new THREE.MeshLambertMaterial({color:col,side:THREE.DoubleSide}));m.receiveShadow=true;g.add(m);}
+var trucks=[];
+function nameMat(){if(!nameMat.m){var cn=document.createElement('canvas');cn.width=512;cn.height=128;var cx=cn.getContext('2d');cx.fillStyle='#fff';cx.fillRect(0,0,512,128);cx.fillStyle='#d3202a';cx.font='bold 62px Arial';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('Zohaib Logistics',256,68);nameMat.m=new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(cn)});}return nameMat.m;}
+function mkTruck(){var t=new THREE.Group();addCab(t);
+ box(5.4,2.3,1.9,WHITE,-1.4,2.0,0,t);box(5.42,.4,1.92,RED,-1.4,1.2,0,t);box(5.42,.08,1.92,0xd5d8da,-1.4,3.18,0,t,{nc:1});
+ for(var k=0;k<6;k++){[.96,-.96].forEach(function(z){box(.06,2.2,.05,0xdadde0,-3.7+k*.9,2.0,z,t,{nc:1});});}
+ [1,-1].forEach(function(s){var d=new THREE.Mesh(new THREE.PlaneGeometry(3.9,.95),nameMat());d.position.set(-1.4,2.5,s*.965);if(s<0)d.rotation.y=Math.PI;t.add(d);});
+ [-.7,.7].forEach(function(z){box(.05,.2,.25,0xff2a2a,-4.12,1.0,z,t,{nc:1});});box(.1,.15,1.7,DARK,-4.2,.7,0,t,{nc:1});[.6,-.6].forEach(function(z){box(.12,.5,.12,GREY,1.0,.55,z,t,{nc:1});});
+ [-2.5,-3.1,-3.7].forEach(function(x){[.82,.5,-.5,-.82].forEach(function(z){wheel(t,x,.42,z,.42);});});
+ t.userData.info='truck';t.scale.setScalar(.8);return t;}
+function mkTruckOld(){var t=new THREE.Group();
+  box(5.2,.3,1.3,DARK,0,.6,0,t);box(1.3,1.5,1.5,RED,1.9,1.35,0,t);box(.06,.7,1.25,GLASS,2.56,1.6,0,t,{nc:1});box(.9,.3,1.4,WHITE,1.7,2.25,0,t);
+  box(3.7,1.9,1.65,WHITE,-.6,1.75,0,t);box(3.72,.4,1.67,RED,-.6,1.05,0,t);[1,-1].forEach(function(s){var d=new THREE.Mesh(new THREE.PlaneGeometry(3.4,.85),nameMat());d.position.set(-.6,1.95,s*.84);if(s<0)d.rotation.y=Math.PI;t.add(d);});
+  [1.9,-.7,-1.8].forEach(function(x){wheel(t,x,.34,.82,.34);wheel(t,x,.34,-.82,.34);});
+  [-.5,.5].forEach(function(z){box(.05,.2,.3,LAMP,2.57,.95,z,t,{nc:1});});
+  t.userData.info='truck';t.scale.setScalar(.6);return t;}
+(function(g){
+  box(34,.02,28,0x88b968,0,.16,0,g,{nc:1});ribbon(3.9,.19,0x6aa557,g);ribbon(1.55,.205,0xf4f4f4,g);ribbon(1.42,.22,0x474d54,g);
+  for(var i=0;i<30;i++){var u=(i+.5)/30,p=curve.getPoint(u),tg=curve.getTangent(u);box(.9,.02,.12,WHITE,p.x,.235,p.z,g,{nc:1,ry:-Math.atan2(tg.z,tg.x)});}
+  [[-11,-3,4.5],[10,-9,4],[12,1,3.6]].forEach(function(h){prim(new THREE.IcosahedronGeometry(h[2],1),0xbfdcc9,h[0],0,h[1],g,{nc:1}).scale.set(1.25,.45,1.25);});
+  house(-12,9,g,.3);house(-8,12,g,-.2);house(11,-5,g,.6);
+  var no=[[-12,9],[-8,12],[11,-5],[-11,-3],[10,-9],[12,1]],tries=0,placed=0;function nearRoad(x,z){var u,p,q;for(u=0;u<=1;u+=.02){p=curve.getPoint(u);if(Math.hypot(p.x-x,p.z-z)<4)return true;}for(q=0;q<no.length;q++)if(Math.hypot(no[q][0]-x,no[q][1]-z)<4.2)return true;return false;}
+  while(placed<14&&tries<120){tries++;var tx=-16+rnd()*32,tz=-13+rnd()*26;if(nearRoad(tx,tz))continue;tree(tx,tz,g,1);placed++;}
+})(S[1].g);
+[0,.5].forEach(function(o){var t=mkTruck();t.scale.setScalar(.66);t.u=o;S[1].g.add(t);trucks.push(t);});
+
+/* 2 airport */
+var planes=[];
+function mkPlane(s){var p=new THREE.Group(),H=Math.PI/2;
+  cyl(.6,.6,5.6,RED,0,0,0,p,{rz:H,s:16});cone(.6,1.8,RED,3.7,0,0,p,{rz:-H,s:16});cone(.6,2.2,RED,-3.9,.1,0,p,{rz:H,s:16});
+  cyl(.62,.62,.5,WHITE,-1.6,0,0,p,{rz:H,s:16});
+  box(2.2,.14,.02,GLASS,1.2,.2,.6,p,{nc:1});box(2.2,.14,.02,GLASS,1.2,.2,-.6,p,{nc:1});box(.5,.22,.02,GLASS,3.1,.25,.45,p,{nc:1});box(.5,.22,.02,GLASS,3.1,.25,-.45,p,{nc:1});
+  box(1.6,.12,3.4,RED,.2,-.2,1.9,p,{ry:-.45});box(1.6,.12,3.4,RED,.2,-.2,-1.9,p,{ry:.45});
+  [1.7,-1.7].forEach(function(z){cyl(.3,.3,1.1,GREY,.7,-.65,z,p,{rz:H,s:12});cyl(.2,.2,.05,DARK,1.27,-.65,z,p,{rz:H,s:12,nc:1});});
+  box(1.2,1.7,.12,RED,-3.2,1,0,p,{rz:.35});box(1,.1,2.6,RED,-3.4,.35,0,p);
+  var gr=new THREE.Group();[.9,-.9].forEach(function(z){box(.1,.9,.1,DARK,.2,-1,z,gr,{nc:1});wheel(gr,.2,-1.3,z,.3);});box(.1,.8,.1,DARK,2.8,-.9,0,gr,{nc:1});wheel(gr,2.8,-1.2,0,.25);p.add(gr);p.gear=gr;p.userData.info='plane';p.scale.setScalar(s||1);return p;}
+(function(g){
+  box(40,.1,4.5,0x5b6166,0,.3,6,g,{nc:1});
+  for(var i=-8;i<9;i++)box(1.2,.02,.2,WHITE,i*2.2,.36,6,g,{nc:1});
+  box(40,.02,.12,WHITE,0,.36,3.95,g,{nc:1});box(40,.02,.12,WHITE,0,.36,8.05,g,{nc:1});
+  box(26,.1,6,0xa9b0b5,-2,.3,-1,g,{nc:1});
+  box(10,2.4,4,WHITE,-4,1.4,-8,g);box(9.6,.9,.1,GLASS,-4,1.5,-5.97,g,{nc:1});box(10.4,.5,4.4,RED,-4,2.8,-8,g);
+  box(1.8,5,1.8,GREY,6,2.7,-9,g);box(3,1,3,GLASS,6,5.7,-9,g);box(3.4,.5,3.4,RED,6,6.45,-9,g);cyl(.05,.05,1.2,DARK,6,7.1,-9,g,{s:6,nc:1});
+  [[9,-.6],[10.8,-.3]].forEach(function(a){box(1.6,.9,1.1,WHITE,a[0],.9,a[1]-4,g);box(1.6,.2,1.1,RED,a[0],1.45,a[1]-4,g,{nc:1});});
+  
+  box(2.6,.05,6.2,0x5b6166,6.2,.31,2,g,{nc:1});box(2.6,.05,6.2,0x5b6166,-15,.31,2.3,g,{nc:1});var fp=mkPlane(1);g.add(fp);planes.push(fp);
+})(S[2].g);
+
+(function(g){
+  box(4,2.6,3,WHITE,-14,1.45,-8,g);box(4.2,.4,3.2,RED,-14,3,-8,g);
+  var cn=document.createElement('canvas');cn.width=256;cn.height=64;var cx=cn.getContext('2d');cx.fillStyle='#fff';cx.fillRect(0,0,256,64);cx.fillStyle='#d3202a';cx.font='bold 40px Arial';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('CUSTOMS',128,34);
+  var pl=new THREE.Mesh(new THREE.PlaneGeometry(3.6,.9),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(cn)}));pl.position.set(-14,2.2,-6.47);g.add(pl);
+  box(.3,1,.3,DARK,-16.2,.65,-4.5,g);box(.3,1,.3,DARK,-11.8,.65,-4.5,g);for(var k=0;k<8;k++)box(.5,.15,.15,k%2?WHITE:RED,-15.8+k*.55,.95,-4.5,g,{nc:1});
+})(S[2].g);
+/* 3 port */
+var water,ship,ptro,pph,foam,wake,slot,pTA,pTB,pcA,pcB,farSea;
+(function(g){
+  var wgeo=new THREE.PlaneGeometry(47,52,47,52),wpa0=wgeo.attributes.position,cs=[],ca=new THREE.Color(0x6fd0d6),cb2=new THREE.Color(0x1f6a9a),ck=new THREE.Color();
+  for(var vi=0;vi<wpa0.count;vi++){var tq=Math.min(1,Math.max(0,(26-wpa0.getY(vi))/40));ck.copy(ca).lerp(cb2,Math.pow(tq,.7));cs.push(ck.r,ck.g,ck.b);}
+  wgeo.setAttribute('color',new THREE.Float32BufferAttribute(cs,3));
+  water=new THREE.Mesh(wgeo,new THREE.MeshPhongMaterial({vertexColors:true,shininess:90,specular:0x9fb4c8}));water.rotation.x=-Math.PI/2;water.position.set(-6.5,.35,22);water.receiveShadow=true;g.add(water);
+  farSea=new THREE.Mesh(new THREE.PlaneGeometry(47,100),new THREE.MeshPhongMaterial({color:0x1f6a9a,shininess:90,specular:0x9fb4c8}));farSea.rotation.x=-Math.PI/2;farSea.position.set(-6.5,.35,98);g.add(farSea);
+  box(2.6,.5,56,0xe6d8b0,-31.3,.2,24,g,{nc:1});box(2.6,.5,44,0xe6d8b0,18.3,.2,30,g,{nc:1});
+  var fm=new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:.45,depthWrite:false});foam=new THREE.Mesh(new THREE.PlaneGeometry(47,1.2),fm);foam.rotation.x=-Math.PI/2;foam.position.set(-6.5,.37,-3.4);g.add(foam);
+  [-30.2,16.6].forEach(function(x){var sf=new THREE.Mesh(new THREE.PlaneGeometry(.9,56),fm);sf.rotation.x=-Math.PI/2;sf.position.set(x,.37,22);g.add(sf);});
+  box(66,.6,10,0xeceff0,0,.4,-9,g,{nc:1});box(66,.2,.4,0xb9c0c3,0,.75,-3.9,g,{nc:1});
+  var cols=[RED,WHITE,GREY,DARK,0xe8a03a];
+  for(var i=0;i<14;i++){var x=-14+(i%7)*4.4,z=-11.8+Math.floor(i/7)*3.6,h=1+Math.floor(rnd()*3);
+    for(var k=0;k<h;k++)ctn(g,x,1.3+k*1.15,z,cols[Math.floor(rnd()*5)]);}
+  [[-1.6,-5.9],[-1.6,-3.1],[1.6,-5.9],[1.6,-3.1]].forEach(function(a){box(.6,7.2,.6,WHITE,a[0],4.3,a[1],g);});[-1.6,1.6].forEach(function(x){box(.12,7.7,.12,GREY,x,4.3,-4.5,g,{rx:.37});box(.12,7.7,.12,GREY,x,4.3,-4.5,g,{rx:-.37});});
+  box(4.2,.7,3.8,WHITE,0,7.8,-4.5,g);box(3.4,.5,16,WHITE,0,8.2,.5,g);box(.3,2.6,.3,RED,0,6.4,9,g,{nc:1});
+  ptro=new THREE.Group();box(1.2,.5,.9,DARK,0,0,0,ptro);pph=mkHook(ptro,2.4,RED,1.4);ptro.position.set(0,7.7,5);ptro.userData.info='crane';g.add(ptro);
+  pTA=mkFlat();pTB=mkFlat();[pTA,pTB].forEach(function(t){t.position.set(-31,.7,-4.5);g.add(t);});
+  pcA=new THREE.Group();ctn(pcA,0,0,0,RED,2.4,1.4);pcA.visible=false;g.add(pcA);pcB=new THREE.Group();ctn(pcB,0,0,0,RED,2.4,1.4);pcB.visible=false;g.add(pcB);
+  ship=new THREE.Group();
+  var sp=new THREE.Shape();sp.moveTo(-8,-2.2);sp.lineTo(6,-2.2);sp.lineTo(9.5,0);sp.lineTo(6,2.2);sp.lineTo(-8,2.2);sp.lineTo(-8,-2.2);
+  prim(new THREE.ExtrudeGeometry(sp,{depth:1.6,bevelEnabled:false}),DARK,0,0,0,ship,{rx:-Math.PI/2});
+  var rb=prim(new THREE.ExtrudeGeometry(sp,{depth:.5,bevelEnabled:false}),RED,0,0,0,ship,{rx:-Math.PI/2,nc:1});rb.scale.set(1.012,1.012,1);
+  box(2.6,3,3.6,WHITE,-5.5,3.1,0,ship);box(.06,.5,3.2,GLASS,-4.18,3.7,0,ship,{nc:1});cyl(.7,.7,2,RED,-5.5,5.6,0,ship,{s:12});cyl(.72,.72,.4,WHITE,-5.5,5.9,0,ship,{s:12,nc:1});
+  for(var a=0;a<4;a++)for(var b=0;b<2;b++)for(var c=0;c<2;c++){if(a===0&&b===0&&c===1){slot=box(2.4,1.1,1.4,RED,-2,3.25,-1,ship);continue;}box(2.4,1.1,1.4,cols[(a+b+c)%4],-2+a*2.6,2.15+c*1.1,-1+b*2,ship);}
+  ship.userData.info='ship';ship.position.set(2,.12,-1);g.add(ship);
+  var sp2=new THREE.Shape();sp2.moveTo(-8.9,-3);sp2.lineTo(6.3,-3);sp2.lineTo(10.4,0);sp2.lineTo(6.3,3);sp2.lineTo(-8.9,3);sp2.lineTo(-8.9,-3);wake=new THREE.Mesh(new THREE.ShapeGeometry(sp2),new THREE.MeshBasicMaterial({color:0xffffff,transparent:true,opacity:.4,depthWrite:false}));wake.rotation.x=-Math.PI/2;wake.position.set(2,.37,-1);g.add(wake);
+})(S[3].g);
+
+/* ship and sea realism */
+var tug,bouys=[],wt1,wt2,ft1;
+function seaAnim(tt){wt1.offset.set(tt*.004,tt*.0025);wt2.offset.set(-tt*.003,tt*.002);ft1.offset.set(tt*.006,-tt*.004);
+ if(ship.radar)ship.radar.rotation.y=tt*3;
+ var a=tt*.15;tug.position.set(11+Math.sin(a)*3,.16+Math.sin(tt*1.1)*.04,7+Math.cos(a)*.6);tug.rotation.y=Math.cos(a)>0?0:Math.PI;tug.rotation.z=Math.sin(tt*.9)*.03;
+ bouys.forEach(function(b,i){b.position.y=.38+Math.sin(tt*1.4+i)*.07;b.rotation.z=Math.sin(tt*1.1+i)*.1;});}
+(function(g){
+  function wtex(blobs,alpha,white){var c=document.createElement('canvas');c.width=c.height=256;var x=c.getContext('2d');if(!white){x.fillStyle='#808080';x.fillRect(0,0,256,256);}
+   for(var i=0;i<blobs;i++){var px=rnd()*256,py=rnd()*256,r=3+rnd()*12,gr=x.createRadialGradient(px,py,0,px,py,r),v=(white||rnd()>.5)?255:0;gr.addColorStop(0,'rgba('+v+','+v+','+v+','+alpha+')');gr.addColorStop(1,'rgba('+v+','+v+','+v+',0)');x.fillStyle=gr;x.beginPath();x.arc(px,py,r,0,6.283);x.fill();}
+   var t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;return t;}
+  wt1=wtex(900,.35,false);wt1.repeat.set(7,8);water.material.bumpMap=wt1;water.material.bumpScale=1.5;water.material.shininess=120;water.material.needsUpdate=true;
+  wt2=wt1.clone();wt2.needsUpdate=true;wt2.repeat.set(7,16);farSea.material.bumpMap=wt2;farSea.material.bumpScale=1.5;farSea.material.needsUpdate=true;
+  ft1=wtex(420,.5,true);ft1.repeat.set(7,8);var fo=new THREE.Mesh(new THREE.PlaneGeometry(47,52),new THREE.MeshBasicMaterial({map:ft1,transparent:true,opacity:.3,depthWrite:false}));fo.rotation.x=-Math.PI/2;fo.position.set(-6.5,.365,22);g.add(fo);
+  ship.children[0].material.color.setHex(0x1b2a3d);
+  box(10.6,.12,3.4,0x6e7378,1.9,1.66,0,ship,{nc:1});
+  [-2.14,2.14].forEach(function(z){box(14,.45,.07,0x1b2a3d,-1,1.83,z,ship,{nc:1});box(14,.06,.09,0xd8dcdf,-1,2.08,z,ship,{nc:1});});
+  box(.07,.45,4.4,0x1b2a3d,-8,1.83,0,ship,{nc:1});[-1,1].forEach(function(s){box(4.13,.45,.07,0x1b2a3d,7.75,1.83,s*1.1,ship,{nc:1,ry:s*.56});});
+  [1.82,-1.82].forEach(function(z){[2.4,3.2,4.0].forEach(function(y){for(var k=0;k<4;k++)box(.4,.3,.04,GLASS,-6.4+k*.6,y,z,ship,{nc:1});});});
+  [2.4,3.2,4.0].forEach(function(y){box(.05,.3,3.2,GLASS,-4.19,y,0,ship,{nc:1});});
+  box(2.9,.35,4.2,WHITE,-5.5,4.78,0,ship);cyl(.05,.05,2.2,GREY,-4.9,5.9,0,ship,{s:6,nc:1});ship.radar=box(.8,.06,.12,DARK,-4.9,7.05,0,ship,{nc:1});cyl(.72,.72,.3,DARK,-5.5,6.75,0,ship,{s:12,nc:1});
+  [1,-1].forEach(function(s){box(1.2,.5,.5,0xe8801a,-5.5,3.4,s*2.05,ship,{nc:1});});
+  box(.8,.4,.8,0x6e7378,7.2,1.8,0,ship,{nc:1});cyl(.06,.06,1.8,GREY,7.9,2.5,0,ship,{s:6,nc:1});
+  var cn=document.createElement('canvas');cn.width=1024;cn.height=96;var cx=cn.getContext('2d');cx.fillStyle='#f4f1ea';cx.font='bold 76px Arial';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('Zohaib Logistics',512,50);var ntx=new THREE.CanvasTexture(cn);
+  [1,-1].forEach(function(s){var pm=new THREE.Mesh(new THREE.PlaneGeometry(6,.56),new THREE.MeshBasicMaterial({map:ntx,transparent:true}));pm.position.set(2.5,1.05,s*2.215);if(s<0)pm.rotation.y=Math.PI;ship.add(pm);});
+  for(var bx=-30;bx<=30;bx+=6)cyl(.18,.22,.45,DARK,bx,.95,-5.6,g,{s:8,nc:1});
+  for(bx=-31.5;bx<=31.5;bx+=3)box(.6,.5,.3,0x15181c,bx,.5,-4.05,g,{nc:1});
+  box(66,.02,.14,YEL,0,.71,-4.5,g,{nc:1});
+  function rope(a,b){var A=new THREE.Vector3(a[0],a[1],a[2]),B=new THREE.Vector3(b[0],b[1],b[2]),m=new THREE.Mesh(new THREE.BoxGeometry(.06,.06,A.distanceTo(B)),M(0x2a2a2a));m.position.copy(A).add(B).multiplyScalar(.5);m.quaternion.setFromUnitVectors(new THREE.Vector3(0,0,1),B.clone().sub(A).normalize());g.add(m);}
+  rope([8.5,2.0,-3.1],[12,1.15,-5.6]);rope([-4.5,2.0,-3.1],[-6,1.15,-5.6]);rope([6,2.0,-3.1],[6,1.15,-5.6]);rope([-1,2.0,-3.1],[0,1.15,-5.6]);
+  tug=new THREE.Group();box(3.4,.7,1.3,RED,0,.45,0,tug);box(3.42,.12,1.32,DARK,0,.12,0,tug,{nc:1});box(.8,.15,1.3,0x15181c,1.8,.5,0,tug,{nc:1});box(1.2,.8,1.0,WHITE,-.4,1.2,0,tug);box(.05,.3,.9,GLASS,.21,1.35,0,tug,{nc:1});cyl(.2,.2,.8,DARK,-.9,1.9,0,tug,{s:8});tug.position.set(11,.16,7);g.add(tug);
+  [[-12,14],[12,16],[-6,24],[8,26]].forEach(function(a,i){var b=new THREE.Group();prim(new THREE.SphereGeometry(.35,10,8),i%2?0x2fb36b:RED,0,.2,0,b);cyl(.04,.04,.9,DARK,0,.8,0,b,{s:5,nc:1});b.position.set(a[0],.38,a[1]);g.add(b);bouys.push(b);});
+})(S[3].g);
+/* 4 rail */
+var train,gtro,gph,ys,flat,tcn,wc;
+(function(g){
+  var im=new THREE.InstancedMesh(new THREE.BoxGeometry(.25,.08,1.8),M(0x8a6f55),210),d=new THREE.Object3D(),n=0;
+  [-6,0,6].forEach(function(z){
+    for(var i=0;i<70;i++){d.position.set(-34.5+i,.2,z);d.updateMatrix();im.setMatrixAt(n++,d.matrix);}
+    box(70,.3,2.2,0xb9b4ac,0,0,z,g,{nc:1});box(70,.1,.12,0x7d848a,0,.3,z-.55,g,{nc:1});box(70,.1,.12,0x7d848a,0,.3,z+.55,g,{nc:1});});
+  im.receiveShadow=true;g.add(im);
+  train=new THREE.Group();
+  box(5,1.4,2.1,RED,0,1.05,0,train);box(2,1.1,2.1,RED,-1.2,2.3,0,train);box(1.4,.5,2.14,GLASS,-1.2,2.4,0,train,{nc:1});box(5.02,.15,2.12,WHITE,0,1.35,0,train,{nc:1});
+  [-.6,.6].forEach(function(z){box(.06,.25,.3,LAMP,2.52,1.3,z,train,{nc:1});});
+  [-1.6,-.5,.6,1.7].forEach(function(x){wheel(train,x,.7,.55,.35);wheel(train,x,.7,-.55,.35);});
+  var cc=[RED,WHITE,GREY,RED];
+  for(var i=0;i<4;i++){var x=-5.8-i*5.6;box(5.2,.3,2.2,DARK,x,.85,0,train);ctn(train,x,1.7,0,cc[i],4.6);
+    [-1.8,1.8].forEach(function(o){wheel(train,x+o,.7,.55,.35);wheel(train,x+o,.7,-.55,.35);});}
+  train.userData.info='train';train.position.set(-22,0,0);g.add(train);
+  [-2.6,2.6].forEach(function(x){[-9.5,9.5].forEach(function(z){box(.6,7.2,.6,RED,x,3.75,z,g);});box(.6,.6,20.6,RED,x,7.4,0,g);});
+  [-9.5,9.5].forEach(function(z){box(5.8,.6,.6,RED,0,7.4,z,g);});
+  gtro=new THREE.Group();box(5.4,.5,.7,DARK,0,0,0,gtro);gtro.position.set(0,7.0,0);g.add(gtro);
+  gph=mkHook(gtro,2.4,RED,.9);gtro.userData.info='gantry';ys=new THREE.Group();ctn(ys,0,0,0,RED,2.4,.9);ys.position.set(0,.72,-8.4);g.add(ys);flat=mkFlat();flat.position.set(-40,.15,8.4);g.add(flat);tcn=new THREE.Group();ctn(tcn,0,0,0,RED,2.4,.9);tcn.visible=false;g.add(tcn);
+  for(var j=0;j<9;j++)ctn(g,-14+j*3.5,.75,-12.2,cc[j%4]);
+})(new THREE.Group());
+/* rail yard: realistic trains, tunnel portals, overhead wires, intermodal crane */
+function eo(u){return 1-(1-u)*(1-u);}function ei(u){return u*u;}
+function kfv(K,t){var i=0;while(i<K.length-2&&K[i+1][0]<=t)i++;var a=K[i],b=K[i+1],u=ss(Math.min(1,Math.max(0,(t-a[0])/(b[0]-a[0]))));return [a[1]+(b[1]-a[1])*u,a[2]+(b[2]-a[2])*u];}
+var RK=[[0,0,-1.6],[8.6,0,-1.6],[10,0,-5.57],[11,0,-5.57],[12.4,0,-1.6],[15,8.4,-1.6],[16.4,8.4,-5.76],[17.4,8.4,-5.76],[18.8,8.4,-1.6],[24.05,-8.4,-1.6],[25.45,-8.4,-6.3],[26.45,-8.4,-6.3],[27.85,-8.4,-1.6],[30.45,0,-1.6],[31.85,0,-5.57],[32.85,0,-5.57],[34.25,0,-1.6],[60,0,-1.6]];
+var PK=[[0,5,-2.2],[2,5,-2.2],[3.5,5,-4.33],[4.5,5,-4.33],[6,5,-2.2],[10,-4.5,-2.2],[11.5,-4.5,-5.91],[12.5,-4.5,-5.91],[14,-4.5,-2.2],[30,-4.5,-2.2],[31.5,-4.5,-5.91],[32.5,-4.5,-5.91],[34,-4.5,-2.2],[39,5,-2.2],[40.5,5,-4.33],[41.5,5,-4.33],[43,5,-2.2],[60,5,-2.2]];
+var RK2=[[0,0,-1.6],[8.6,0,-1.6],[10,0,-5.57],[11,0,-5.57],[12.4,0,-1.6],[15,8,-1.6],[16.4,8,-5.42],[17.4,8,-5.42],[18.8,8,-1.6],[24.05,-8.4,-1.6],[25.45,-8.4,-6.3],[26.45,-8.4,-6.3],[27.85,-8.4,-1.6],[30.45,0,-1.6],[31.85,0,-5.57],[32.85,0,-5.57],[34.25,0,-1.6],[60,0,-1.6]];
+var PK2=[[0,5,-2.2],[2,5,-2.2],[3.5,5,-4.33],[4.5,5,-4.33],[6,5,-2.2],[10,-4.5,-2.2],[11.5,-4.5,-5.57],[12.5,-4.5,-5.57],[14,-4.5,-2.2],[30,-4.5,-2.2],[31.5,-4.5,-5.57],[32.5,-4.5,-5.57],[34,-4.5,-2.2],[39,5,-2.2],[40.5,5,-4.33],[41.5,5,-4.33],[43,5,-2.2],[60,5,-2.2]];
+function railAnim(tt){var t=tt%60,v=kfv(RK2,t),x,u;gtro.position.z=v[0];gph.hk.position.y=v[1];var len=-(v[1]+.6);gph.cb.scale.y=len;gph.cb.position.y=-len/2;
+ if(t<10)x=-34+43.9*eo(t/10);else if(t<34)x=9.9;else if(t<46){u=(t-34)/12;x=9.9+52*ei(u);}else x=-34;
+ train.position.x=x;wc.visible=t<10.6||t>=32.4;gph.hk.visible=(t>=10.6&&t<17)||(t>=26&&t<32.4);ys.visible=t<26||t>=48;
+ var fx;if(t<10)fx=-40;else if(t<16)fx=-40+41.28*eo((t-10)/6);else if(t<18)fx=1.28;else if(t<25)fx=1.28+40*ei((t-18)/7);else fx=-40;
+ flat.position.set(fx,.15,8);tcn.visible=t>=17&&t<24.9;tcn.position.set(fx-1.28,1.58,8);}
+var PK3=[[0,-2,-2.2],[2,-2,-2.2],[3.5,-2,-4.33],[4.5,-2,-4.33],[6,-2,-2.2],[8.5,-4.5,-2.2],[10,-4.5,-5.57],[11,-4.5,-5.57],[12.5,-4.5,-2.2],[30,-4.5,-2.2],[31.5,-4.5,-5.57],[32.5,-4.5,-5.57],[34,-4.5,-2.2],[36.5,-2,-2.2],[38,-2,-4.33],[39,-2,-4.33],[40.5,-2,-2.2],[60,-2,-2.2]];
+function portAnim(tt){var t=tt%60,v=kfv(PK3,t);ptro.position.z=v[0];pph.hk.position.y=v[1];var len=-(v[1]+.6);pph.cb.scale.y=len;pph.cb.position.y=-len/2;
+ pph.hk.visible=(t>=4&&t<10.5)||(t>=32&&t<38.5);slot.visible=t<4||t>=38.5;
+ var xa=t<4?-31:t<10?-31+32.28*eo((t-4)/6):t<14?1.28:t<21?1.28+31*ei((t-14)/7):-31;
+ var xb=t<22?-31:t<28?-31+32.28*eo((t-22)/6):t<35?1.28:t<42?1.28+31*ei((t-35)/7):-31;
+ pTA.position.x=xa;pTB.position.x=xb;pTA.visible=Math.abs(xa)<30.5;pTB.visible=Math.abs(xb)<30.5;
+ pcA.visible=t>=10.5&&t<21;pcA.position.set(xa-1.28,2.13,-4.5);pcB.visible=t>=22&&t<32;pcB.position.set(xb-1.28,2.13,-4.5);}
+function portAnimV2(tt){var t=tt%60,v=kfv(PK2,t);ptro.position.z=v[0];pph.hk.position.y=v[1];var len=-(v[1]+.6);pph.cb.scale.y=len;pph.cb.position.y=-len/2;
+ pph.hk.visible=(t>=4&&t<12)||(t>=32&&t<41);slot.visible=t<4||t>=41;
+ var xa=t<4?-31:t<10?-31+32.28*eo((t-4)/6):t<14?1.28:t<21?1.28+31*ei((t-14)/7):-31;
+ var xb=t<22?-31:t<28?-31+32.28*eo((t-22)/6):t<35?1.28:t<42?1.28+31*ei((t-35)/7):-31;
+ pTA.position.x=xa;pTB.position.x=xb;pTA.visible=Math.abs(xa)<30.5;pTB.visible=Math.abs(xb)<30.5;
+ pcA.visible=t>=12&&t<21;pcA.position.set(xa-1.28,2.13,-4.5);pcB.visible=t>=22&&t<32;pcB.position.set(xb-1.28,2.13,-4.5);}
+function railAnimOld(tt){var t=tt%60,v=kfv(RK,t),x,u;gtro.position.z=v[0];gph.hk.position.y=v[1];var len=-(v[1]+.6);gph.cb.scale.y=len;gph.cb.position.y=-len/2;
+ if(t<10)x=-34+43.9*eo(t/10);else if(t<34)x=9.9;else if(t<46){u=(t-34)/12;x=9.9+52*ei(u);}else x=-34;
+ train.position.x=x;wc.visible=t<10.6||t>=32.4;gph.hk.visible=(t>=10.6&&t<17)||(t>=26&&t<32.4);ys.visible=t<26||t>=48;
+ var fx;if(t<10)fx=-40;else if(t<16)fx=-40+40.45*eo((t-10)/6);else if(t<18)fx=.45;else if(t<25)fx=.45+40*ei((t-18)/7);else fx=-40;
+ flat.position.x=fx;tcn.visible=t>=17&&t<24.9;tcn.position.set(fx-.45,1.24,8.4);}
+function portAnimOld(tt){var t=tt%60,v=kfv(PK,t);ptro.position.z=v[0];pph.hk.position.y=v[1];var len=-(v[1]+.6);pph.cb.scale.y=len;pph.cb.position.y=-len/2;
+ pph.hk.visible=(t>=4&&t<12)||(t>=32&&t<41);slot.visible=t<4||t>=41;
+ var xa=t<4?-31:t<10?-31+31.45*eo((t-4)/6):t<14?.45:t<21?.45+31*ei((t-14)/7):-31;
+ var xb=t<22?-31:t<28?-31+31.45*eo((t-22)/6):t<35?.45:t<42?.45+31*ei((t-35)/7):-31;
+ pTA.position.x=xa;pTB.position.x=xb;pTA.visible=Math.abs(xa)<30.5;pTB.visible=Math.abs(xb)<30.5;
+ pcA.visible=t>=12&&t<21;pcA.position.set(xa-.45,1.79,-4.5);pcB.visible=t>=22&&t<32;pcB.position.set(xb-.45,1.79,-4.5);}
+(function(g){
+  ren.localClippingEnabled=true;
+  var x0=S[4].x,pl=new THREE.Plane(new THREE.Vector3(1,0,0),-(x0-33)),pr=new THREE.Plane(new THREE.Vector3(-1,0,0),x0+30),i,k;
+  var im=new THREE.InstancedMesh(new THREE.BoxGeometry(.25,.08,1.8),M(0x8a6f55),189),d=new THREE.Object3D(),n=0;
+  [-6,0,6].forEach(function(z){for(i=0;i<63;i++){d.position.set(-33+i,.2,z);d.updateMatrix();im.setMatrixAt(n++,d.matrix);}
+    box(63,.3,2.2,0xb9b4ac,-1.5,0,z,g,{nc:1});[-.55,.55].forEach(function(o){box(63,.1,.1,0x8a9096,-1.5,.33,z+o,g,{nc:1});box(63,.04,.22,0x6e757b,-1.5,.27,z+o,g,{nc:1});});});
+  im.receiveShadow=true;g.add(im);
+  [[-33.7,1],[30.7,-1]].forEach(function(p){box(1.4,4.4,15,0xaeb4b8,p[0],2.35,0,g);box(1.6,.5,15.4,0x8d9498,p[0],4.7,0,g);[-6,0,6].forEach(function(z){box(.3,3.2,2.4,0x14171a,p[0]+p[1]*.62,1.9,z,g,{nc:1});});});
+  for(var mx=-28;mx<=28;mx+=8){[-3,3].forEach(function(z){box(.25,5,.25,GREY,mx,2.65,z,g,{nc:1});});box(.15,.15,13.5,GREY,mx,4.95,0,g,{nc:1});}
+  [-6,0,6].forEach(function(z){box(63,.04,.04,0x2a2d31,-1.5,4.25,z,g,{nc:1});});
+  var T=new THREE.Group();train=T;
+  box(5,1.3,1.7,RED,0,1.0,0,T);box(2,1,1.7,RED,-1.3,2.15,0,T);box(5.02,.12,1.72,WHITE,0,1.1,0,T,{nc:1});box(.05,1.1,1.7,YEL,2.5,1.0,0,T,{nc:1});
+  [-.6,.6].forEach(function(z){box(.06,.22,.3,LAMP,2.53,1.35,z,T,{nc:1});box(1.2,.45,.04,GLASS,-1.3,2.3,z*1.43,T,{nc:1});});
+  box(.05,.5,1.4,GLASS,-.28,2.3,0,T,{nc:1});box(.9,.3,1.2,GREY,1.0,1.8,0,T);
+  box(.8,.1,.8,DARK,-1.3,2.72,0,T,{nc:1});box(.05,1.6,.05,DARK,-1.45,3.45,0,T,{nc:1,rz:.45});box(.05,1.6,.05,DARK,-1.15,3.45,0,T,{nc:1,rz:-.45});box(.12,.05,1.1,DARK,-1.3,4.22,0,T,{nc:1});
+  [-1.6,1.6].forEach(function(x){box(2.2,.3,1.2,DARK,x,.55,0,T);[-.45,.45].forEach(function(o){wheel(T,x+o,.68,.55,.3);wheel(T,x+o,.68,-.55,.3);});});
+  var CC=[RED,0x3a6ea5,GREY,WHITE,0x2f7a4f,0xe8a03a];
+  for(i=0;i<4;i++){var wx=-5.6-i*5.6;box(5.2,.25,1.6,DARK,wx,.75,0,T);box(.4,.15,.15,DARK,wx+2.8,.7,0,T,{nc:1});
+    [-1.8,1.8].forEach(function(o){box(1.3,.25,1.2,DARK,wx+o,.55,0,T,{nc:1});[-.4,.4].forEach(function(q){wheel(T,wx+o+q,.68,.55,.3);wheel(T,wx+o+q,.68,-.55,.3);});});
+    [-1.3,1.3].forEach(function(o,j){if(i===3)return;if(i===2&&j===1)return;var c=CC[(i*2+j)%6];if(i===1&&j===1){wc=new THREE.Group();ctn(wc,wx+o,1.43,0,c,2.4,1.4);T.add(wc);}else ctn(T,wx+o,1.43,0,c,2.4,1.4);});}
+  T.traverse(function(o){if(o.material)o.material.clippingPlanes=[pl,pr];});
+  T.userData.info='train';T.position.set(-34,0,0);g.add(T);
+  [-2.6,2.6].forEach(function(x){[-9.5,9.5].forEach(function(z){box(.6,7.2,.6,RED,x,3.75,z,g);});box(.6,.6,20.6,RED,x,7.4,0,g);});[-9.5,9.5].forEach(function(z){box(5.8,.6,.6,RED,0,7.4,z,g);});
+  gtro=new THREE.Group();box(5.4,.5,.7,DARK,0,0,0,gtro);gtro.position.set(0,7.0,0);g.add(gtro);gph=mkHook(gtro,2.4,RED,1.4);gtro.userData.info='gantry';
+  ys=new THREE.Group();ctn(ys,0,0,0,RED,2.4,1.4);ys.position.set(0,.7,-8.4);g.add(ys);
+  flat=mkFlat();flat.position.set(-40,.15,8.4);g.add(flat);tcn=new THREE.Group();ctn(tcn,0,0,0,RED,2.4,1.4);tcn.visible=false;g.add(tcn);
+  for(var j=0;j<9;j++)for(k=0;k<(j%3?1:2);k++)ctn(g,-14+j*3.5,.7+k*1.1,-12.4,CC[(j+k)%6],3.2,1.6);
+})(S[4].g);
+
+/* 5 cold chain, 6 last mile */
+var rf,vanA,bikeA;
+function reefer(){var t=mkTruck();box(.5,.9,1.4,GREY,1.15,3.25,0,t);box(5.43,.35,1.93,0x8ccbe6,-1.4,1.9,0,t);t.userData.info='reefer';return t;}
+(function(g){
+  box(20,5,8,0xe8f1f5,0,2.5,-7,g);box(20.4,.6,8.4,0x8ccbe6,0,5.2,-7,g);
+  for(var i=0;i<3;i++){box(3,3.2,.2,GLASS,-6+i*6,1.9,-2.95,g,{nc:1});box(3.4,.3,.3,0x8ccbe6,-6+i*6,3.6,-2.9,g,{nc:1});}
+  cyl(.9,.9,1,GREY,7,5.9,-8,g,{s:10});cyl(.9,.9,1,GREY,3,5.9,-8,g,{s:10});
+  for(i=0;i<5;i++){box(1.4,.15,1.4,0xa9814f,-9+i*4.5,.25,6.5,g);box(1.2,1,1.2,i%2?WHITE:0xcfe6f0,-9+i*4.5,.85,6.5,g);}
+  var cn=document.createElement('canvas');cn.width=256;cn.height=128;var cx=cn.getContext('2d');cx.fillStyle='#8ccbe6';cx.fillRect(0,0,256,128);cx.fillStyle='#14324a';cx.font='bold 62px Arial';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('\u221218 \u00b0C',128,66);
+  var sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cn)}));sp.scale.set(5,2.5,1);sp.position.set(0,7.6,-3);g.add(sp);
+  rf=reefer();rf.rotation.y=-Math.PI/2;rf.position.set(-6,.15,5);g.add(rf);
+  var r2=reefer();r2.rotation.y=-Math.PI/2;r2.position.set(0,.15,-.1);g.add(r2);
+})(S[5].g);
+(function(g){
+  box(34,.02,28,0x88b968,0,.16,0,g,{nc:1});[-2.6,2.6].forEach(function(o){box(34,.03,2.2,0x6aa557,0,.185,o,g,{nc:1});box(2.2,.03,26,0x6aa557,o,.185,0,g,{nc:1});});box(34,.04,3,0x474d54,0,.205,0,g,{nc:1});box(3,.04,26,0x474d54,0,.205,0,g,{nc:1});[-1.4,1.4].forEach(function(o){box(34,.01,.1,WHITE,0,.228,o,g,{nc:1});box(.1,.01,26,WHITE,o,.228,0,g,{nc:1});});
+  for(var i=-6;i<=6;i++){box(.9,.02,.12,WHITE,i*2.4,.235,0,g,{nc:1});box(.12,.02,.9,WHITE,0,.235,i*2,g,{nc:1});}
+  [[-9,-5],[-14,-5],[-9,5],[-14,5],[9,-5],[14,-5],[9,5],[14,5],[-6,-10],[6,10]].forEach(function(h){house(h[0],h[1],g,h[1]>0?Math.PI:0);box(.5,.4,.4,WOOD,h[0]+.9,.35,h[1]+(h[1]>0?-1.5:1.5),g);});
+  vanA=new THREE.Group();box(2.6,1.5,1.4,WHITE,-.3,1.2,0,vanA);box(1,1.1,1.4,RED,1.3,1,0,vanA);box(.05,.5,1.2,GLASS,1.82,1.2,0,vanA,{nc:1});box(2.62,.3,1.42,RED,-.3,.8,0,vanA,{nc:1});
+  [-1,1.2].forEach(function(x){wheel(vanA,x,.38,.7,.38);wheel(vanA,x,.38,-.7,.38);});vanA.userData.info='van';g.add(vanA);
+  bikeA=new THREE.Group();box(1.2,.4,.4,RED,0,.65,0,bikeA);box(.4,.8,.4,DARK,-.1,1.15,0,bikeA);cyl(.2,.2,.3,0xe8c9a0,-.1,1.7,0,bikeA,{s:8});box(.6,.6,.6,WHITE,-.7,1.0,0,bikeA);
+  [.7,-.7].forEach(function(x){cyl(.35,.35,.15,TIRE,x,.35,0,bikeA,{rx:Math.PI/2,s:10});});bikeA.userData.info='van';g.add(bikeA);
+})(S[6].g);
+/* 7 head office */
+(function(g){
+  function lit(x,y,z,side){var m=new THREE.Mesh(new THREE.BoxGeometry(side?.1:2.3,.6,side?2.3:.1),new THREE.MeshBasicMaterial({color:rnd()>.15?0xf5c97a:0x56606b}));m.position.set(x,y,z);g.add(m);}
+  box(14,11.4,9,0x262a31,0,5.85,-3,g);box(3.6,13.6,3.6,RED,-5.2,6.8,1.2,g);box(3,1.2,3,GREY,3,12.6,-4,g);cyl(.1,.1,5,DARK,-5.2,16,1.2,g,{s:6});box(14.8,.8,9.8,RED,0,11.8,-3,g);box(.7,11.4,.7,RED,-7,5.85,1.5,g);box(.7,11.4,.7,RED,7,5.85,1.5,g);
+  for(var r=0;r<5;r++){var c;for(c=0;c<5;c++)lit(-5.2+c*2.6,2.4+r*1.9,1.55,0);for(c=0;c<3;c++)lit(7.05,2.4+r*1.9,-5.2+c*2.8,1);}
+  box(3.2,2.6,.3,GLASS,0,1.45,1.6,g,{nc:1});box(4.4,.3,2.2,RED,0,3.1,2.5,g);
+  box(.2,1.8,.2,DARK,-3.5,13,-3,g);box(.2,1.8,.2,DARK,3.5,13,-3,g);
+  var cn=document.createElement('canvas');cn.width=512;cn.height=128;var cx=cn.getContext('2d');cx.fillStyle='#d3202a';cx.fillRect(0,0,512,128);cx.fillStyle='#fff';cx.font='bold 58px Arial';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('Zohaib Logistics',256,68);
+  var sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cn)}));sp.scale.set(9,2.25,1);sp.position.set(0,14.4,-3);g.add(sp);
+  [[-9,8,RED],[-6,8,WHITE],[-3,8,GREY],[9,7,DARK]].forEach(function(a){box(2.2,.7,1.1,a[2],a[0],.6,a[1],g);box(1.2,.5,1,GLASS,a[0]-.1,1.2,a[1],g,{nc:1});box(2.1,.25,1.1,TIRE,a[0],.25,a[1],g,{nc:1});});
+})(new THREE.Group());
+/* luxury head office */
+(function(g){
+  var STONE=0xd9d0bf,GOLD=0xc9a24d,NAVY=0x17212e,GL=0x24364a,CREAM=0xf1ebdd,GRN=0x2f6b3a;
+  function pane(w,h,x,y,z,side){var m=new THREE.Mesh(new THREE.BoxGeometry(side?.08:w,h,side?w:.08),new THREE.MeshBasicMaterial({color:rnd()>.2?0xf2cd85:0x4b5b6e}));m.position.set(x,y,z);g.add(m);}
+  function tex(w,h,fn){var c=document.createElement('canvas');c.width=w;c.height=h;fn(c.getContext('2d'),w,h);return new THREE.CanvasTexture(c);}
+  function car(x,z,ry,c){var p=new THREE.Group();box(2.6,.55,1.15,c,0,.62,0,p);box(1.3,.42,1.0,0x1d2733,-.15,1.1,0,p,{nc:1});[.4,-.4].forEach(function(o){box(.06,.25,.3,LAMP,1.32,.65,o,p,{nc:1});});[[.8,.6],[.8,-.6],[-.8,.6],[-.8,-.6]].forEach(function(w){wheel(p,w[0],.28,w[1],.28);});p.position.set(x,.25,z);p.rotation.y=ry;g.add(p);}
+  box(34,.12,19,0xcfc7b8,0,.2,8,g,{nc:1});box(34.4,.1,19.4,0xb9b09f,0,.17,8,g,{nc:1});
+  box(18,4.4,11,STONE,0,2.35,-3,g);box(18.6,.4,11.6,CREAM,0,4.75,-3,g);
+  box(16.4,3,.1,GL,0,2.3,2.58,g,{nc:1});for(var k=-4;k<=4;k++)box(.12,3.1,.14,GOLD,k*2,2.3,2.62,g,{nc:1});
+  box(12,12,8,0x1c2735,0,10.8,-4.5,g);
+  for(var r=0;r<7;r++){var y=7.6+r*1.4,c;for(c=0;c<6;c++)pane(1.7,1.0,-5+c*2,y,-.47,0);for(c=0;c<3;c++){pane(1.7,1.0,6.05,y,-7+c*2.5,1);pane(1.7,1.0,-6.05,y,-7+c*2.5,1);}}
+  for(k=-6;k<=6;k+=2)box(.1,12,.18,GOLD,k,10.8,-.42,g,{nc:1});
+  box(12.6,.5,8.6,GOLD,0,17.05,-4.5,g);box(8,2.4,5,0x1c2735,0,18.5,-4.5,g);box(8.4,.3,5.4,GOLD,0,19.8,-4.5,g,{nc:1});box(3,1,2,GREY,-1,20.5,-4.5,g);cyl(.08,.08,4,DARK,2,22,-4.5,g,{s:6,nc:1});
+  box(9.6,1.5,.12,NAVY,0,6.2,-.42,g);
+  var st=new THREE.Mesh(new THREE.PlaneGeometry(9.2,1.3),new THREE.MeshBasicMaterial({map:tex(1024,144,function(x,w,h){x.fillStyle='#17212e';x.fillRect(0,0,w,h);x.strokeStyle='#c9a24d';x.lineWidth=4;x.strokeRect(8,8,w-16,h-16);x.fillStyle='#e0bd6a';x.font='bold 80px Georgia, serif';x.textAlign='center';x.textBaseline='middle';x.fillText('Zohaib Logistics',w/2,h/2+4);})}));st.position.set(0,6.2,-.34);g.add(st);
+  [-4.5,-1.5,1.5,4.5].forEach(function(x){cyl(.35,.4,4.4,CREAM,x,2.35,5.2,g,{s:16});box(.25,.25,.25,LAMP,x,.35,5.6,g,{nc:1});});
+  box(11.6,.5,3.8,0x2a2f37,0,4.75,4.0,g);box(11.8,.14,4.0,GOLD,0,4.45,4.0,g,{nc:1});
+  [0,1,2].forEach(function(i){box(10.4+i*.8,.12,1.1,CREAM,0,.3-i*.08,5.9+i*.55,g,{nc:1});});
+  box(3.2,2.8,.1,0x3a5d78,0,1.7,2.6,g,{nc:1});box(3.4,.12,.14,GOLD,0,3.15,2.64,g,{nc:1});
+  box(11,.4,1.4,STONE,0,.4,13,g);[-4.5,4.5].forEach(function(x){box(1,3.3,1,STONE,x,2.0,13,g);box(1.2,.25,1.2,CREAM,x,3.8,13,g,{nc:1});});
+  box(8.2,3.1,.2,GOLD,0,2.2,13.4,g,{nc:1});
+  var bd=new THREE.Mesh(new THREE.PlaneGeometry(8,2.9),new THREE.MeshBasicMaterial({map:tex(1024,372,function(x,w,h){x.fillStyle='#17212e';x.fillRect(0,0,w,h);x.strokeStyle='#c9a24d';x.lineWidth=6;x.strokeRect(14,14,w-28,h-28);x.lineWidth=2;x.strokeRect(30,30,w-60,h-60);x.fillStyle='#e0bd6a';x.font='bold 118px Georgia, serif';x.textAlign='center';x.textBaseline='middle';x.fillText('Zohaib Logistics',w/2,h/2-18);x.fillStyle='#f4f1ea';x.font='46px Georgia, serif';x.fillText('Transport & Logistics',w/2,h/2+86);})}));bd.position.set(0,2.2,13.55);g.add(bd);
+  cyl(2.4,2.5,.55,CREAM,0,.5,9.2,g,{s:24});cyl(2.0,2.0,.1,0x6fd0d6,0,.8,9.2,g,{s:24,nc:1});cyl(.12,.12,1.6,0xdff6ff,0,1.6,9.2,g,{s:6,nc:1});prim(new THREE.SphereGeometry(.35,10,8),0xdff6ff,0,2.5,9.2,g,{nc:1});
+  [[-7.5,7],[7.5,7],[-10.5,7],[10.5,7]].forEach(function(a){cyl(.45,.38,.7,CREAM,a[0],.55,a[1],g,{s:12});prim(new THREE.IcosahedronGeometry(.65,1),GRN,a[0],1.35,a[1],g);});
+  [[-8.5,11],[8.5,11]].forEach(function(a){box(6,.7,.9,GRN,a[0],.55,a[1],g);});
+  [-12,12].forEach(function(x){cyl(.06,.06,6.5,GREY,x,3.4,10,g,{s:6,nc:1});var fl=new THREE.Mesh(new THREE.PlaneGeometry(1.8,1.1),new THREE.MeshBasicMaterial({side:THREE.DoubleSide,map:tex(256,160,function(c2,w,h){c2.fillStyle='#d3202a';c2.fillRect(0,0,w,h);c2.fillStyle='#fff';c2.font='bold 72px Arial';c2.textAlign='center';c2.textBaseline='middle';c2.fillText('ZL',w/2,h/2+4);})}));fl.position.set(x+.95,6.0,10);g.add(fl);});
+  [[-12,4],[12,4],[-12,14],[12,14]].forEach(function(a){cyl(.06,.06,3.2,DARK,a[0],1.8,a[1],g,{s:6,nc:1});box(.35,.18,.35,LAMP,a[0],3.5,a[1],g,{nc:1});});
+  car(-5.5,10.5,-Math.PI/2,0x14171a);car(-8.8,10.5,-Math.PI/2,0xf4f4f2);car(5.5,10.5,-Math.PI/2,0x7b838c);car(8.8,10.5,-Math.PI/2,0x1f3a5f);
+  tree(-15,2,g,1.3);tree(15,2,g,1.3);tree(-15,9,g,1.1);tree(15,9,g,1.1);
+})(S[7].g);
+/* natural environment: sky, fields, hills, mountains, forest, compound walls */
+var sky,fclouds=[];
+function envAnim(tt){sky.position.copy(cam.position);labelAnim();if(wt3)wt3.offset.set(tt*.0006,tt*.0004);cargoAnim(tt);courierAnim(tt);fclouds.forEach(function(c){c.position.x=((c.x0+tt*c.s)%560)-80;});}
+(function(){
+  var i,sg=new THREE.SphereGeometry(360,24,16),pa=sg.attributes.position,cl=[],hz=new THREE.Color(0xcfe3ee),zn=new THREE.Color(0x5a9bd5),cc=new THREE.Color();
+  for(i=0;i<pa.count;i++){var t=Math.max(0,pa.getY(i)/360);cc.copy(hz).lerp(zn,Math.pow(t,.55));cl.push(cc.r,cc.g,cc.b);}
+  sg.setAttribute('color',new THREE.Float32BufferAttribute(cl,3));
+  sky=new THREE.Mesh(sg,new THREE.MeshBasicMaterial({vertexColors:true,side:THREE.BackSide,fog:false,depthWrite:false}));sky.renderOrder=-1;scene.add(sky);
+  var gc=[0x5f8a45,0x739c55,0x587f40,0x86a85e,0x6a9448];
+  for(i=0;i<70;i++){var pg=new THREE.CircleGeometry(6+rnd()*16,14);pg.rotateX(-Math.PI/2);var pm=new THREE.Mesh(pg,new THREE.MeshLambertMaterial({color:gc[Math.floor(rnd()*5)]}));pm.position.set(-60+rnd()*460,-.098+i*.0002,-26-rnd()*140);pm.scale.x=1.5+rnd();scene.add(pm);}
+  var fc=[0x93ab5c,0xb8a25a,0x6b9443,0xa3b868,0x7da04c];
+  for(i=0;i<26;i++){box(25+rnd()*35,.04,12+rnd()*18,fc[Math.floor(rnd()*5)],-50+i*17+rnd()*6,-.07+i*.0003,-34-rnd()*40,scene,{nc:1});}
+  for(i=0;i<16;i++){var hr=16+rnd()*16,hm=prim(new THREE.IcosahedronGeometry(hr,1),[0x6f9f5a,0x7aa862,0x5f8f4e][i%3],-60+i*32+rnd()*10,0,-78-rnd()*18,scene,{nc:1});hm.scale.set(1.5,.5+rnd()*.25,1);}
+  for(i=0;i<20;i++){var mh=34+rnd()*38,mr=26+rnd()*20,mx=-90+i*28+rnd()*10,mz=-112-rnd()*16;prim(new THREE.ConeGeometry(mr,mh,6),i%2?0x74889b:0x667b8e,mx,mh/2,mz,scene,{nc:1});if(mh>52)prim(new THREE.ConeGeometry(mr*.36,mh*.3,6),0xf4f6f8,mx,mh*.85,mz,scene,{nc:1});}
+  var N=420,fg=new THREE.ConeGeometry(1.3,4.2,6);fg.translate(0,2.1,0);var fm2=new THREE.InstancedMesh(fg,new THREE.MeshLambertMaterial({flatShading:true}),N),dm=new THREE.Object3D(),col=new THREE.Color(),gs=[0x2f6b3a,0x3f7d3a,0x4f9a45,0x2a5a2c];
+  for(i=0;i<N;i++){var s2=.8+rnd()*1.1;dm.position.set(-70+rnd()*480,0,-24-rnd()*70);dm.scale.set(s2,s2*(.9+rnd()*.5),s2);dm.updateMatrix();fm2.setMatrixAt(i,dm.matrix);col.setHex(gs[Math.floor(rnd()*4)]);fm2.setColorAt(i,col);}
+  fm2.instanceColor.needsUpdate=true;scene.add(fm2);
+  var cm2=new THREE.MeshLambertMaterial({color:0xffffff,transparent:true,opacity:.95});
+  for(i=0;i<16;i++){var c=new THREE.Group();for(var k=0;k<5;k++){var m=new THREE.Mesh(new THREE.IcosahedronGeometry(5+rnd()*5,1),cm2);m.position.set(k*7-14,rnd()*3,rnd()*6);m.scale.y=.55;c.add(m);}c.x0=rnd()*560;c.s=1+rnd()*1.5;c.position.set(0,28+rnd()*14,-90-rnd()*60);scene.add(c);fclouds.push(c);}
+  function cwall(g,x1,z1,x2,z2,h,col2,cap){var dx=x2-x1,dz=z2-z1,L=Math.abs(dx)+Math.abs(dz),ax=Math.abs(dx)>0;box(ax?L:.3,h,ax?.3:L,col2,(x1+x2)/2,h/2+.15,(z1+z2)/2,g);box(ax?L+.1:.5,.12,ax?.5:L+.1,cap,(x1+x2)/2,h+.21,(z1+z2)/2,g,{nc:1});var n=Math.max(1,Math.round(L/6));for(var q=0;q<=n;q++)box(.55,h+.3,.55,cap,x1+dx*q/n,(h+.3)/2+.15,z1+dz*q/n,g);}
+  var W0=0xcfcac0,W1=0xb5afa2;
+  [0,5].forEach(function(si){var g=S[si].g;cwall(g,-17.2,-14.2,17.2,-14.2,2,W0,W1);cwall(g,-17.2,-14.2,-17.2,14.2,2,W0,W1);cwall(g,17.2,-14.2,17.2,14.2,2,W0,W1);});
+  cwall(S[2].g,-17.2,-14.2,17.2,-14.2,2,W0,W1);
+  var h7=S[7].g,WC=0xe8e0cf,WG=0xc9a24d;
+  cwall(h7,-17.2,-14.2,17.2,-14.2,2.2,WC,WG);cwall(h7,-17.2,-14.2,-17.2,17.6,2.2,WC,WG);cwall(h7,17.2,-14.2,17.2,17.6,2.2,WC,WG);
+  cwall(h7,-17.2,17.6,-4.5,17.6,1,WC,WG);cwall(h7,4.5,17.6,17.2,17.6,1,WC,WG);
+  [-4.5,4.5].forEach(function(x){box(.9,2.8,.9,0xd9d0bf,x,1.55,17.6,h7);box(1.1,.2,1.1,WG,x,3.05,17.6,h7,{nc:1});box(.4,.25,.4,LAMP,x,3.3,17.6,h7,{nc:1});});
+})();
+/* ui */
+var dots=document.getElementById('dots'),T=document.getElementById('t'),D=document.getElementById('d'),card=document.getElementById('card'),hint=document.getElementById('hint'),scr=document.getElementById('scroller');
+S.forEach(function(s,i){var b=document.createElement('button');b.className='dot';b.setAttribute('aria-label','Go to '+s.t);b.onclick=function(){window.scrollTo({top:i/(S.length-1)*(scr.offsetHeight-innerHeight),behavior:'smooth'});};dots.appendChild(b);});
+var cur=-1,cardT;function showCard(){card.classList.remove('gone');clearTimeout(cardT);cardT=setTimeout(function(){card.classList.add('gone');},30000);}
+function setStep(i){if(i===cur)return;cur=i;showCard();card.classList.add('swap');setTimeout(function(){T.textContent=L==='ur'?SU[i][0]:S[i].t;D.textContent=L==='ur'?SU[i][1]:S[i].d;card.classList.remove('swap');},180);
+  [].forEach.call(dots.children,function(b,k){b.classList.toggle('on',k===i);});if(tabsEl)[].forEach.call(tabsEl.children,function(b,k){b.classList.toggle('on',k===i);});}
+setStep(0);T.textContent=S[0].t;D.textContent=S[0].d;
+
+function resize(){ren.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.fov=innerWidth<innerHeight?55:38;cam.updateProjectionMatrix();}
+addEventListener('resize',resize);resize();
+function ss(x){return x*x*(3-2*x);}
+var p=new THREE.Vector3(),look=new THREE.Vector3(),tp=new THREE.Vector3(),tl=new THREE.Vector3(),first=true,reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function target(f){
+  var i=Math.min(Math.floor(f),S.length-2),u=ss(f-i),a=S[i],b=S[i+1];
+  var ax=a.x+a.cam[0],bx=b.x+b.cam[0];
+  tp.set(ax+(bx-ax)*u,a.cam[1]+(b.cam[1]-a.cam[1])*u+Math.sin(u*Math.PI)*6,a.cam[2]+(b.cam[2]-a.cam[2])*u);
+  var az=a.lz||0,bz=b.lz||0,ay=a.ly===undefined?1:a.ly,by=b.ly===undefined?1:b.ly;tl.set(a.x+(b.x-a.x)*u,ay+(by-ay)*u,az+(bz-az)*u);
+}
+var clock=new THREE.Clock(),wp=water.geometry.attributes.position;
+function frame(){
+  var tt=clock.getElapsedTime(),max=Math.max(1,scr.offsetHeight-innerHeight),f=Math.max(0,Math.min(1,scrollY/max))*(S.length-1);
+  target(f);if(drone.on)droneTarget();
+  if(first||reduce){p.copy(tp);look.copy(tl);first=false;}else{p.lerp(tp,.07);look.lerp(tl,.07);}
+  pmx+=(mx-pmx)*.05;pmy+=(my-pmy)*.05;cam.position.set(p.x+(reduce?0:pmx*1.4),p.y-(reduce?0:pmy*.8),p.z);cam.lookAt(look);
+  sun.position.set(look.x+30,look.y+50,look.z+20);sun.target.position.copy(look);
+  setStep(drone.on?drone.focus:Math.round(f));pbE.style.width=(f/(S.length-1)*100)+'%';
+  hint.style.opacity=scrollY>40?0:1;document.body.classList.toggle('past',scrollY>max+40);
+  trucks.forEach(function(t){var u=(tt*.03+t.u)%1,pt=curve.getPoint(u),tg=curve.getTangent(u);t.position.copy(pt);t.position.y+=.08;t.rotation.y=-Math.atan2(tg.z,tg.x);});
+  flyPlane(planes[0],tt);
+  fork.position.x=Math.sin(tt*.4)*10;fork.rotation.y=Math.cos(tt*.4)>0?0:Math.PI;fork.pallet.visible=Math.cos(tt*.4)>0;
+  for(var i=0;i<wp.count;i++){var wx=wp.getX(i),wy=wp.getY(i);wp.setZ(i,Math.sin(wx*.5+tt*1.1)*.09+Math.cos(wy*.6+tt*.9)*.08+Math.sin((wx+wy)*.9+tt*1.7)*.04);}foam.material.opacity=.4+Math.sin(tt*1.3)*.12;wake.material.opacity=.38+Math.sin(tt*2)*.1;
+  wp.needsUpdate=true;water.geometry.computeVertexNormals();ambient(tt);dockAnim(tt);seaAnim(tt);envAnim(tt);
+  rf.position.z=5.7+Math.sin(tt*.25)*5.8;var vc=Math.cos(tt*.35);vanA.position.set(Math.sin(tt*.35)*12,.22,vc>0?.75:-.75);vanA.rotation.y=vc>0?0:Math.PI;var bc=Math.cos(tt*.5+1);bikeA.position.set(bc>0?.75:-.75,.22,Math.sin(tt*.5+1)*10);bikeA.rotation.y=bc>0?-Math.PI/2:Math.PI/2;
+  ship.position.y=.12+Math.sin(tt*.8)*.05;ship.rotation.z=Math.sin(tt*.6)*.012;
+  portAnim(tt);
+  railAnim(tt);
+  
+  if(!document.hidden&&scrollY<=max+innerHeight)ren.render(scene,cam);requestAnimationFrame(frame);
+}
+/* extras */
+function $(id){return document.getElementById(id);}
+var UR={call:'کال کریں',wa:'واٹس ایپ',msg:'واٹس ایپ پر میسج کریں',callnum:'کال: +92 309 3540698',h_sv:'ہماری خدمات',sv1:'روڈ فریٹ',sv1d:'ملک بھر میں ڈور ٹو ڈور ٹرک سروس۔',sv2:'ایئر فریٹ',sv2d:'ارجنٹ اور قیمتی مال کی تیز ترسیل۔',sv3:'سی فریٹ',sv3d:'کنٹینر شپنگ، کسٹمز سپورٹ کے ساتھ۔',sv4:'ٹرین اور انٹرموڈل',sv4d:'ٹرین، روڈ اور پورٹ ایک ہی چین میں۔',sv5:'ویئر ہاؤسنگ',sv5d:'محفوظ اسٹوریج، ہینڈلنگ اور ڈسٹری بیوشن۔',h_r:'پاکستان کے روٹس',h_q:'فوری کوٹیشن',from:'کہاں سے',to:'کہاں تک',kg:'وزن (کلوگرام)',mode:'ذریعہ',road:'روڈ',air:'ایئر',sea:'سی',rail:'ٹرین',go:'اندازہ لگائیں',h_t:'شپمنٹ ٹریکنگ (ڈیمو)',tid:'ٹریکنگ آئی ڈی',trk:'ٹریک کریں',h_f:'عام سوالات',q1:'آپ کن روٹس پر سروس دیتے ہیں؟',a1:'اپنا پک اپ اور ڈیلیوری پوائنٹ ہمیں واٹس ایپ پر بھیجیں، ہم تصدیق کر دیں گے کہ کیا ممکن ہے۔',q2:'کوٹیشن کیسے ملے گی؟',a2:'اوپر کوٹیشن فارم استعمال کریں یا روٹ، وزن اور مال کی قسم کے ساتھ واٹس ایپ پر میسج کریں۔',q3:'کیا میں اپنی شپمنٹ ٹریک کر سکتا ہوں؟',a3:'اس پیج پر ٹریکنگ ڈیمو ہے۔ لائیو اپڈیٹس ہماری ٹیم واٹس ایپ پر شیئر کرتی ہے۔',h_c:'ہم سے رابطہ کریں'};
+var UR2={h_cg:'ہم کیا ڈھوتے ہیں',c1:'ٹیکسٹائل اور گارمنٹس',c1d:'بڑی اور ڈبہ بند کھپت بندرگاہوں اور خریداروں تک۔',c2:'ای کامرس پارسل',c2d:'تیز اور محفوظ پارسل ڈیلیوری۔',c3:'فارما اور ہیلتھ کیئر',c3d:'درجۂ حرارت کنٹرول کے ساتھ احتیاط سے ترسیل۔',c4:'مشینری اور صنعتی سامان',c4d:'بھاری اور بڑے سامان کے لیے خصوصی انتظام۔',h_w:'ہمارا انتخاب کیوں',w1:'ایک ہی رابطہ',w1d:'پک اپ سے ڈیلیوری تک ایک ہی شخص سے بات۔',w2:'واضح کوٹیشن',w2d:'روٹ اور مال بتائیں، واٹس ایپ پر واضح کوٹیشن لیں۔',w3:'ڈور ٹو ڈور',w3d:'روڈ، ٹرین، سی اور ایئر، پوری چین کی منصوبہ بندی۔',w4:'کھپت کی اطلاع',w4d:'ہر مرحلے پر واٹس ایپ پر اپڈیٹ۔',nm:'آپ کا نام',ph:'فون',cg:'مال کی قسم',ms:'پیغام',send:'واٹس ایپ پر بھیجیں'};for(var k in UR2)UR[k]=UR2[k];
+function setLang(l){L=l;document.documentElement.lang=l;[].forEach.call(document.querySelectorAll('[data-k]'),function(e){if(e.dataset.en===undefined)e.dataset.en=e.textContent;e.textContent=l==='ur'?(UR[e.dataset.k]||e.dataset.en):e.dataset.en;});$('card').dir=$('more').dir=l==='ur'?'rtl':'ltr';$('lg').textContent=l==='ur'?'EN':'اردو';var c=cur;cur=-1;setStep(c);}
+$('lg').onclick=function(){setLang(L==='ur'?'en':'ur');};
+var night=false,lamps=[];
+S.forEach(function(s){var l=new THREE.PointLight(0xffd9a0,1.3,48);l.position.set(s.x,9,2);l.visible=false;scene.add(l);lamps.push(l);});
+$('nt').onclick=function(){night=!night;var c=night?0x0b1424:0xcfe3ee;scene.background.setHex(c);scene.fog.color.setHex(c);sky.material.color.setHex(night?0x25324d:0xffffff);hemi.intensity=night?.42:.78;sun.intensity=night?.25:.85;sun.color.setHex(night?0x9fb4ff:0xffffff);lamps.forEach(function(l){l.visible=night;});rain.visible=night;document.documentElement.dataset.theme=night?'dark':'light';$('nt').textContent=night?'☀':'☾';};
+var INFO={truck:['Road freight','Door-to-door trucks on scheduled routes.','روڈ فریٹ','شیڈولڈ روٹس پر ڈور ٹو ڈور ٹرک۔'],plane:['Air freight','Fast flights for urgent and high-value cargo.','ایئر فریٹ','ارجنٹ اور قیمتی مال کے لیے تیز پروازیں۔'],ship:['Sea freight','Container shipping to major ports worldwide.','سی فریٹ','دنیا کی بڑی بندرگاہوں تک کنٹینر شپنگ۔'],train:['Train freight','Large-capacity trains with lower emissions per tonne.','ٹرین فریٹ','زیادہ گنجائش اور کم اخراج والی ٹرین سروس۔'],fork:['Warehouse handling','Forklifts move pallets between racks and docks.','ویئر ہاؤس ہینڈلنگ','فورک لفٹ پیلٹس کو ریک اور ڈاک کے درمیان منتقل کرتی ہیں۔'],crane:['Port crane','Containers are lifted between the quay and the ship.','پورٹ کرین','کنٹینر کوے اور جہاز کے درمیان اٹھائے جاتے ہیں۔'],gantry:['Train yard gantry crane','Containers move between the yard and the train tracks.','ٹرین گینٹری کرین','کنٹینر یارڈ اور ٹرین ٹریک کے درمیان منتقل ہوتے ہیں۔']};
+INFO.reefer=['Cold chain','Temperature-controlled storage and transport for food and pharma.','کولڈ چین','خوراک اور ادویات کے لیے درجۂ حرارت کنٹرول سروس۔'];INFO.van=['Last-mile delivery','Vans and bikes bring cargo to the final doorstep.','آخری میل کی ڈیلیوری','وین اور موٹر سائیکل مال آخری دروازے تک پہنچاتے ہیں۔'];
+var rc=new THREE.Raycaster(),mv=new THREE.Vector2(),tip=$('tip'),tipT;
+cv.addEventListener('click',function(e){mv.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight)*2+1);rc.setFromCamera(mv,cam);var h=rc.intersectObjects(scene.children,true);
+ for(var i=0;i<h.length;i++){var o=h[i].object;while(o&&!(o.userData&&o.userData.info))o=o.parent;if(o){var n=INFO[o.userData.info],u=L==='ur';tip.textContent='';var b=document.createElement('b');b.textContent=n[u?2:0];tip.appendChild(b);tip.appendChild(document.createTextNode(n[u?3:1]));tip.dir=u?'rtl':'ltr';tip.style.left=Math.max(8,Math.min(e.clientX,innerWidth-262))+'px';tip.style.top=Math.max(70,e.clientY-90)+'px';tip.style.display='block';clearTimeout(tipT);tipT=setTimeout(function(){tip.style.display='none';},4500);return;}}
+ tip.style.display='none';});
+var CT={Karachi:[24.86,67.01],Lahore:[31.52,74.36],Islamabad:[33.68,73.05],Faisalabad:[31.42,73.08],Multan:[30.2,71.47],Peshawar:[34.01,71.52],Quetta:[30.18,66.99],Sialkot:[32.49,74.53],Dubai:[25.2,55.27],Shanghai:[31.23,121.47]},INT={Dubai:1,Shanghai:1},qf=$('qf'),qt=$('qt');
+Object.keys(CT).forEach(function(k){[qf,qt].forEach(function(s){var o=document.createElement('option');o.value=o.textContent=k;s.appendChild(o);});});qt.value='Lahore';
+function gc(a,b){var r=Math.PI/180,A=CT[a],B=CT[b],dl=(B[1]-A[1])*r,dp=(B[0]-A[0])*r,h=Math.sin(dp/2)*Math.sin(dp/2)+Math.cos(A[0]*r)*Math.cos(B[0]*r)*Math.sin(dl/2)*Math.sin(dl/2);return 12742*Math.asin(Math.sqrt(h));}
+$('qb').onclick=function(){var a=qf.value,b=qt.value,w=Math.max(1,parseFloat($('qw').value)||1),m=$('qm').value,ur=L==='ur',intl=INT[a]||INT[b],d=Math.round(gc(a,b)*(intl?1:1.25)),msg,lo,hi;
+ if(a===b){msg=ur?'روانگی اور منزل مختلف چنیں۔':'Please choose two different places.';}
+ else if((m==='road'||m==='rail')&&intl){msg=ur?'روڈ اور ٹرین صرف ملک کے اندر کے لیے ہیں، ایئر یا سی چنیں۔':'Road and train are for domestic routes. Choose air or sea for this route.';}
+ else if(m==='sea'&&!intl){msg=ur?'سی فریٹ بین الاقوامی روٹس کے لیے ہے (کراچی پورٹ کے ذریعے)۔':'Sea freight is for international routes (via Karachi Port).';}
+ else{if(m==='road'){lo=Math.ceil(d/450)+1;hi=lo+1;}else if(m==='rail'){lo=Math.ceil(d/400)+2;hi=lo+2;}else if(m==='air'){lo=intl?2:1;hi=lo+1;}else{lo=Math.ceil(d/700)+5;hi=lo+4;}
+  msg=ur?('اندازاً وقت: '+lo+'–'+hi+' دن (تقریباً '+d+' کلومیٹر)۔ حتمی قیمت واٹس ایپ پر بتائی جائے گی۔'):('Indicative transit: '+lo+'–'+hi+' days (about '+d+' km). Final price is confirmed on WhatsApp.');}
+ var out=$('qr');out.textContent=msg+' ';
+ if(lo){var l=document.createElement('a');l.className='btn';l.target='_blank';l.rel='noopener';l.href='https://wa.me/923168463954?text='+encodeURIComponent('Hello Zohaib Logistics, I need a quote: '+a+' to '+b+', '+w+' kg, '+m+'.');l.textContent=ur?'تفصیل واٹس ایپ پر بھیجیں':'Send details on WhatsApp';out.appendChild(document.createElement('br'));out.appendChild(l);out.appendChild(jbtn(m));}};
+$('tb').onclick=function(){var id=$('ti').value.trim(),o=$('tr'),ur=L==='ur';o.textContent='';if(!id){o.textContent=ur?'ٹریکنگ آئی ڈی لکھیں۔':'Enter a tracking ID.';return;}
+ if(CFG.trackUrl){realTrack(id,o,ur);return;}var h=0;for(var i=0;i<id.length;i++)h=(h*31+id.charCodeAt(i))>>>0;var s=h%7,X=[['At the cold store','کولڈ اسٹور میں'],['Out for delivery','ڈیلیوری کے لیے روانہ']],N=[['At our warehouse','ہمارے ویئر ہاؤس میں'],['On the road','سڑک پر'],['At the airport','ایئرپورٹ پر'],['At the port','پورٹ پر'],['On the train','ٹرین پر']];
+ o.textContent=(ur?'اسٹیٹس (ڈیمو): ':'Status (demo): ')+(N[s]||X[s-5])[ur?1:0]+' ';var b=document.createElement('button');b.className='btn alt';b.textContent=ur?'3D نقشے پر دیکھیں':'View on the 3D map';b.onclick=function(){mark(s);goTo(s);};o.appendChild(b);var jl=document.createElement('div');jl.className='jl';for(var k=0;k<7;k++){var dt=document.createElement('i');if(k<=s)dt.className='on';jl.appendChild(dt);}o.appendChild(jl);};
+var clouds=[],birds=[],cm=new THREE.MeshLambertMaterial({color:0xffffff,transparent:true,opacity:.92}),csm=new THREE.MeshBasicMaterial({color:0x000000,transparent:true,opacity:.08,depthWrite:false});
+(function(){var i;for(i=0;i<9;i++){var c=new THREE.Group(),cy=36+rnd()*6;for(var k=0;k<4;k++){var m=new THREE.Mesh(new THREE.IcosahedronGeometry(2+rnd()*1.5,1),cm);m.position.set(k*2.6-4,rnd()*1.2,rnd()*2);m.scale.y=.6;c.add(m);}
+ var dg=new THREE.CircleGeometry(6,20);dg.rotateX(-Math.PI/2);var ds=new THREE.Mesh(dg,csm);ds.scale.set(1.7,1,1);ds.position.set(0,-cy+.45,0);c.add(ds);
+ c.x0=rnd()*360;c.s=.5+rnd()*.6;c.position.set(0,cy,-25+rnd()*55);scene.add(c);clouds.push(c);}
+ function mkBird(){var b=new THREE.Group(),W=0xf1f1ee,T=0x6a6f75;
+  var body=prim(new THREE.SphereGeometry(.3,8,6),W,0,0,0,b,{nc:1});body.scale.set(1.5,.55,.6);
+  prim(new THREE.SphereGeometry(.13,8,6),W,.42,.06,0,b,{nc:1});cone(.05,.2,0xe8a03a,.6,.04,0,b,{s:5,nc:1,rz:-Math.PI/2});box(.3,.03,.22,W,-.5,.02,0,b,{nc:1});
+  function wing(side){var w=new THREE.Group();w.position.set(0,.05,side*.15);box(.32,.025,.5,W,0,0,side*.25,w,{nc:1});var o=new THREE.Group();o.position.set(0,0,side*.5);box(.3,.02,.45,T,-.03,0,side*.22,o,{nc:1});w.add(o);w.o=o;b.add(w);return w;}
+  b.wL=wing(1);b.wR=wing(-1);return b;}
+ for(i=0;i<7;i++){var b=mkBird();b.rotation.order='YXZ';b.scale.setScalar(1.2);b.cx=S[Math.floor(rnd()*S.length)].x;b.r=14+rnd()*14;b.a0=rnd()*6.28;b.sp=.12+rnd()*.1;b.y0=11+rnd()*5;b.p=rnd()*6;scene.add(b);birds.push(b);}})();
+var RN=450,rpos=new Float32Array(RN*3),rg=new THREE.BufferGeometry();
+for(var ri=0;ri<RN;ri++){rpos[ri*3]=rnd()*80-40;rpos[ri*3+1]=rnd()*30;rpos[ri*3+2]=rnd()*60-30;}
+rg.setAttribute('position',new THREE.BufferAttribute(rpos,3));var rain=new THREE.Points(rg,new THREE.PointsMaterial({color:0xaec4e8,size:.18,transparent:true,opacity:.7}));rain.visible=false;rain.frustumCulled=false;scene.add(rain);
+function ambient(tt){if(pin.visible){pin.position.y=9+Math.sin(tt*3)*.5;pin.rotation.y=tt*1.5;}clouds.forEach(function(c){c.position.x=((c.x0+tt*c.s*1.5)%360)-60;});birds.forEach(function(b){var a=b.a0+tt*b.sp,amp=Math.sin(tt*.4+b.p)>0?1:.15,f=Math.sin(tt*10+b.p)*.7*amp+.12;b.position.set(b.cx+Math.cos(a)*b.r,b.y0+Math.sin(tt*.7+b.p)*.6,Math.sin(a)*b.r*.7);b.rotation.y=-Math.atan2(.7*Math.cos(a),-Math.sin(a));b.rotation.x=.35;b.wL.rotation.x=-f;b.wR.rotation.x=f;b.wL.o.rotation.x=-f*.6;b.wR.o.rotation.x=f*.6;});
+ if(rain.visible){for(var i=0;i<RN;i++){rpos[i*3+1]-=.45;if(rpos[i*3+1]<0)rpos[i*3+1]=30;}rg.attributes.position.needsUpdate=true;rain.position.x=look.x;}}
+var lowQ=innerWidth<700||(navigator.hardwareConcurrency||8)<=4;
+function setQ(l){lowQ=l;ren.setPixelRatio(l?1:Math.min(devicePixelRatio,2));sun.castShadow=!l;scene.traverse(function(o){if(o.material)o.material.needsUpdate=true;});resize();$('ql').textContent=l?'SD':'HD';}
+$('ql').onclick=function(){setQ(!lowQ);};setQ(lowQ);
+$('cb').onclick=function(){lead('quote',{name:$('cn').value,phone:$('cp').value,cargo:$('cc').value,details:$('cm').value});var t='Hello Zohaib Logistics, I need a quote.\nName: '+($('cn').value||'-')+'\nPhone: '+($('cp').value||'-')+'\nCargo: '+$('cc').value+'\nDetails: '+($('cm').value||'-');window.open('https://wa.me/923168463954?text='+encodeURIComponent(t),'_blank','noopener');};
+var tabsEl,pbE,mx=0,my=0,pmx=0,pmy=0,touring=false,tourT,pinT;
+pbE=$('pb');
+function goTo(i){if(drone.on){var wasOver=drone.over;if(wasOver){dm=1;setDrone(1);}drone.focus=i;setStep(i);return;}scrollTo({top:i/(S.length-1)*(scr.offsetHeight-innerHeight),behavior:'smooth'});}
+var TB=['Warehouse','Road','Air','Sea','Train','Cold chain','Last mile','Contact'],TBU=['ویئر ہاؤس','روڈ','ایئر','سی','ٹرین','کولڈ چین','آخری میل','رابطہ'];
+tabsEl=document.createElement('nav');tabsEl.id='tabs';tabsEl.setAttribute('aria-label','Stations');document.body.appendChild(tabsEl);
+TB.forEach(function(n,i){var b=document.createElement('button');b.textContent=n;b.setAttribute('data-k','t'+i);UR['t'+i]=TBU[i];b.onclick=function(){goTo(i);};tabsEl.appendChild(b);});
+tabsEl.children[Math.max(cur,0)].classList.add('on');
+function tl(){return L==='ur'?'ٹور':'Tour';}
+function stopTour(){touring=false;clearInterval(tourT);$('tour').textContent='\u25b6 '+tl();}
+$('tour').onclick=function(){if(touring){stopTour();return;}touring=true;$('tour').textContent='\u275a\u275a '+tl();goTo(Math.min(cur+1,S.length-1));tourT=setInterval(function(){if(cur+1>=S.length){stopTour();return;}goTo(cur+1);},6000);};
+['wheel','touchstart','keydown'].forEach(function(ev){addEventListener(ev,function(){if(touring)stopTour();},{passive:true});});
+addEventListener('keydown',function(e){var t=e.target.tagName;if(t==='INPUT'||t==='SELECT'||t==='TEXTAREA'||e.ctrlKey||e.metaKey||e.altKey)return;if(scrollY>scr.offsetHeight-innerHeight+40)return;var k=e.key,n=-1;if(k==='ArrowDown'||k==='ArrowRight'||k==='PageDown')n=Math.min(cur+1,S.length-1);else if(k==='ArrowUp'||k==='ArrowLeft'||k==='PageUp')n=Math.max(cur-1,0);else if(k==='Home')n=0;else if(k==='End')n=S.length-1;if(n>=0){e.preventDefault();goTo(n);}});
+var lastMv=0;cv.addEventListener('pointermove',function(e){var now=performance.now();if(now-lastMv<90)return;lastMv=now;mx=e.clientX/innerWidth*2-1;my=e.clientY/innerHeight*2-1;mv.set(mx,-my);rc.setFromCamera(mv,cam);var h=rc.intersectObjects(scene.children,true),f=false;for(var i=0;i<h.length&&!f;i++){var o=h[i].object;while(o&&!(o.userData&&o.userData.info))o=o.parent;if(o)f=true;}cv.style.cursor=f?'pointer':'';});
+var pin=new THREE.Group();cone(1,2.2,RED,0,0,0,pin,{s:4,rz:Math.PI});prim(new THREE.TorusGeometry(1.6,.12,8,24),RED,0,-1.6,0,pin,{rx:Math.PI/2,nc:1});pin.visible=false;pin.position.set(0,9,0);scene.add(pin);
+function mark(s){pin.visible=true;pin.position.x=S[s].x;clearTimeout(pinT);pinT=setTimeout(function(){pin.visible=false;},14000);}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e;}
+function lead(type,o){if(!CFG.formUrl)return;o.type=type;o.time=new Date().toISOString();try{fetch(CFG.formUrl,{method:'POST',mode:'no-cors',body:new URLSearchParams(o)});}catch(x){}}
+function realTrack(id,o,ur){o.textContent=ur?'تلاش جاری ہے…':'Looking up…';fetch(CFG.trackUrl).then(function(r){return r.text();}).then(function(tx){var row=null;tx.split(/\r?\n/).forEach(function(l){var c=l.split(',');if(c[0]&&c[0].trim().toLowerCase()===id.toLowerCase())row=c;});o.textContent='';
+ if(!row){o.textContent=ur?'یہ ٹریکنگ آئی ڈی نہیں ملی۔':'Tracking ID not found.';return;}
+ var st=parseInt(row[2],10);o.textContent=(ur?'اسٹیٹس: ':'Status: ')+(row[1]||'-')+(row[3]?' ('+row[3].trim()+')':'')+' ';
+ if(st>=0&&st<S.length){var b=el('button','btn alt',ur?'3D نقشے پر دیکھیں':'View on the 3D map');b.onclick=function(){mark(st);goTo(st);};o.appendChild(b);}
+ }).catch(function(){o.textContent=ur?'ابھی ٹریکنگ دستیاب نہیں۔':'Tracking is unavailable right now.';});}
+UR.h_ab='ہمارے بارے میں';UR.h_cl='ہمارے کلائنٹس';UR.h_rv='کلائنٹس کی رائے';UR.h_sc='روانگی کا شیڈول';UR.h_pt='ہمارے ساتھ شراکت کریں';UR.pt_d='کیا آپ کے پاس ٹرک یا ٹریلر ہے؟ اپنی گاڑی اور روٹس بتائیں، مناسب لوڈ آنے پر ہم رابطہ کریں گے۔';UR.vt='گاڑی کی قسم';UR.rt='آپ کن روٹس پر چلتے ہیں';
+(function(){var ab=$('about_f');
+ if(CFG.address||CFG.hours||CFG.ntn){[['Address',CFG.address],['Working hours',CFG.hours],['Registration (NTN)',CFG.ntn]].forEach(function(r){if(!r[1])return;var d=el('div','fact');d.appendChild(el('small','',r[0]));d.appendChild(document.createTextNode(r[1]));ab.appendChild(d);});
+  if(CFG.address){var m=el('a','btn alt','Open in Google Maps');m.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(CFG.address);m.target='_blank';m.rel='noopener';var w=el('div','fact');w.appendChild(m);ab.appendChild(w);}$('about').hidden=false;}
+ if(CFG.clients.length){CFG.clients.forEach(function(n){$('cl_f').appendChild(el('span','chip',n));});$('clients').hidden=false;}
+ if(CFG.reviews.length){CFG.reviews.forEach(function(r){var d=el('div','sv');d.appendChild(el('div','rv','\u201c'+r.t+'\u201d'));d.appendChild(el('cite','',r.n));$('rv_f').appendChild(d);});$('reviews').hidden=false;}
+ if(CFG.schedule.length){CFG.schedule.forEach(function(r){var tr=el('tr');tr.appendChild(el('td','',r.r));tr.appendChild(el('td','',r.d));$('sc_f').appendChild(tr);});$('schedule').hidden=false;}
+ if(CFG.brochure){var bb=el('a','btn alt','Download company profile');bb.href=CFG.brochure;bb.target='_blank';bb.rel='noopener';document.querySelector('#contact .row2').appendChild(bb);}
+})();
+var CONSENT=false,pend=[];function addScript(src,inl){if(!CONSENT){pend.push([src,inl]);return;}var s=document.createElement('script');if(src){s.async=true;s.src=src;}else s.text=inl;document.head.appendChild(s);}
+if(CFG.gaId&&/^G-[A-Z0-9]+$/.test(CFG.gaId)){addScript('https://www.googletagmanager.com/gtag/js?id='+CFG.gaId);addScript('','window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","'+CFG.gaId+'");');}
+if(CFG.clarityId&&/^[a-z0-9]+$/.test(CFG.clarityId))addScript('','(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","'+CFG.clarityId+'");');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(a&&window.gtag){var h=a.getAttribute('href')||'';if(h.indexOf('wa.me')>-1)gtag('event','whatsapp_click');else if(h.indexOf('tel:')===0)gtag('event','call_click');}});
+$('pb2').onclick=function(){var o={name:$('pn').value,phone:$('pp').value,vehicle:$('pt').value,routes:$('pr').value};lead('partner',o);var t='Hello Zohaib Logistics, I would like to partner as a transporter.\nName: '+(o.name||'-')+'\nPhone: '+(o.phone||'-')+'\nVehicle: '+o.vehicle+'\nRoutes: '+(o.routes||'-');window.open('https://wa.me/923168463954?text='+encodeURIComponent(t),'_blank','noopener');};
+$('bp').onclick=function(){$('dp').showModal();};$('bt').onclick=function(){$('dt').showModal();};
+[].forEach.call(document.querySelectorAll('dialog'),function(d){d.addEventListener('click',function(e){if(e.target===d)d.close();});});
+/* ===== extra tools: map, calculators, booking, help, sound, cookies, journey ===== */
+function waBtn(t,label){var a=el('a','btn',label||'Send on WhatsApp');a.href='https://wa.me/923168463954?text='+encodeURIComponent(t);a.target='_blank';a.rel='noopener';return a;}
+function fillSel(id,def){var s=$(id);Object.keys(CT).forEach(function(k){var o=document.createElement('option');o.value=o.textContent=k;s.appendChild(o);});s.value=def;}
+fillSel('wf','Karachi');fillSel('wt','Lahore');fillSel('kf','Karachi');fillSel('kt','Lahore');
+function dist(a,b){return Math.round(gc(a,b)*((INT[a]||INT[b])?1:1.25));}
+UR.h_mp='پاکستان میں ہمارا نیٹ ورک';UR.h_fl='کنٹینر کے سائز اور گنجائش';UR.h_tl='شپنگ ٹولز';UR.h_bk='شپمنٹ بک کریں';UR.h_in='فریٹ گائیڈز';UR.h_cs='کیس اسٹڈیز';UR.h_jb='ملازمتیں';
+/* journey in 3D */
+var jTimer;function jbtn(m){var b=el('button','btn alt','See your shipment’s journey in 3D');b.style.marginInlineStart='8px';b.onclick=function(){var seq={road:[0,1,6],train:[0,4,6],sea:[0,1,3,6],air:[0,2,6]}[m]||[0,1,6],i=0;clearInterval(jTimer);function step(){goTo(seq[i]);mark(seq[i]);i++;if(i>=seq.length)clearInterval(jTimer);}step();jTimer=setInterval(step,6000);};return b;}
+['wheel','touchstart'].forEach(function(ev){addEventListener(ev,function(){clearInterval(jTimer);},{passive:true});});
+/* map */
+(function(){var sv=$('pkmap'),ns='http://www.w3.org/2000/svg';function P(lon,lat){return [(lon-60.8)*20,(37.3-lat)*24];}
+ function mk(t,a){var e=document.createElementNS(ns,t);for(var k in a)e.setAttribute(k,a[k]);sv.appendChild(e);return e;}
+ var O=[[61.6,25.2],[63.5,25.3],[66.4,25.4],[67.0,24.85],[67.5,24.0],[68.2,23.7],[69.4,24.3],[70.4,25.6],[70.9,26.7],[70.1,28.0],[71.4,29.2],[73.0,29.9],[74.6,31.3],[74.7,32.5],[75.5,34.5],[77.0,35.3],[77.8,35.6],[75.0,37.0],[73.5,36.8],[71.5,36.6],[71.1,35.0],[70.9,34.0],[69.9,33.0],[69.3,31.9],[68.0,31.3],[66.4,30.0],[66.3,29.2],[64.9,29.5],[62.5,29.4],[61.6,28.0],[61.6,26.2]];
+ mk('polygon',{points:O.map(function(p){return P(p[0],p[1]).join(',');}).join(' '),fill:'rgba(184,145,79,.14)',stroke:'#b8914f','stroke-width':2,'stroke-linejoin':'round'});
+ var ka=P(CT.Karachi[1],CT.Karachi[0]);
+ function showCity(n){var t=$('mp_t'),d=$('mp_d'),r=$('mp_r');t.textContent=n;r.textContent='';if(n==='Karachi'){d.textContent='Karachi Port is the main sea gateway. Sea freight to Dubai and Shanghai is arranged through Karachi.';}else{var km=dist('Karachi',n),lo=Math.ceil(km/450)+1,tl=Math.ceil(km/400)+2;d.textContent='Karachi to '+n+': about '+km+' km. Indicative transit: road '+lo+'-'+(lo+1)+' days, train '+tl+'-'+(tl+2)+' days.';}r.appendChild(waBtn('Hello Zohaib Logistics, I need a quote for '+(n==='Karachi'?'a shipment from Karachi':'Karachi to '+n)+'.','Get a quote for this route'));}
+ Object.keys(CT).forEach(function(n){if(INT[n]||n==='Karachi')return;var p=P(CT[n][1],CT[n][0]);mk('line',{x1:ka[0],y1:ka[1],x2:p[0],y2:p[1],'class':'route'});});
+ Object.keys(CT).forEach(function(n){if(INT[n])return;var p=P(CT[n][1],CT[n][0]),c=mk('circle',{cx:p[0],cy:p[1],r:5}),t=mk('text',{x:p[0]+8,y:p[1]+4});t.textContent=n;c.onclick=t.onclick=function(){showCity(n);};});
+ showCity('Karachi');})();
+/* container and CBM calculator */
+$('bgo').onclick=function(){var L=+$('bl').value,W=+$('bw').value,H=+$('bh').value,n=+$('bq').value,k=+$('bk').value,o=$('bout');o.textContent='';if(!(L>0&&W>0&&H>0&&n>0)){o.textContent='Enter length, width, height and the number of boxes.';return;}
+ var cbm=L*W*H/1e6*n,kg=(k||0)*n,ch=[['20ft container',33,28000],['40ft container',67,26500],['40ft high cube',76,26400]],fit=ch.filter(function(c){return cbm<=c[1]*.85&&(!kg||kg<=c[2]);})[0];
+ var t='Total volume: '+cbm.toFixed(2)+' CBM'+(kg?' | Total weight: '+Math.round(kg)+' kg':'')+'. '+(fit?'Suggested: '+fit[0]+' (about '+Math.round(cbm/fit[1]*100)+'% of its volume).':'This is more than one container. Plan about '+Math.ceil(cbm/(76*.85))+' x 40ft high cube, or ask us for a split.');
+ o.appendChild(el('p','',t));o.appendChild(el('small','','Assumes about 85% usable space. Palletised or oddly shaped cargo may need more.'));o.appendChild(waBtn('Hello Zohaib Logistics, I have about '+cbm.toFixed(1)+' CBM ('+n+' boxes). Please advise the best container or truck.','Ask us on WhatsApp'));};
+/* carbon compare */
+var EF={road:62,train:22,sea:16,air:600};
+$('kgo').onclick=function(){var a=$('kf').value,b=$('kt').value,w=Math.max(1,+$('kw').value||1),d=dist(a,b),o=$('kout');o.textContent='';if(a===b){o.textContent='Choose two different places.';return;}
+ var t=w/1000,rows=[['Train','train'],['Sea','sea'],['Road','road'],['Air','air']],max=0,vals=rows.map(function(r){var v=EF[r[1]]*t*d/1000;max=Math.max(max,v);return v;});
+ rows.forEach(function(r,i){var row=el('div','bar');row.appendChild(el('span','',r[0]+': '+vals[i].toFixed(vals[i]<10?2:1)+' kg CO\u2082'));var f=el('i');f.style.width=Math.max(3,vals[i]/max*100)+'%';row.appendChild(f);o.appendChild(row);});
+ o.appendChild(el('small','','Indicative only: typical emission factors per tonne-km over about '+d+' km. Sea and air apply to port and airport routes. Real figures vary by vehicle and load.'));};
+/* documents checklist */
+var DOC={export:['Commercial invoice','Packing list','Bill of lading or air waybill','Export Goods Declaration (GD) filed with customs','Certificate of origin (if the buyer requires it)','Cargo insurance certificate','Product permits or test reports (if required)'],import:['Commercial invoice','Packing list','Bill of lading or air waybill','Import Goods Declaration (GD) filed with customs','Delivery order from the shipping line or airline','Certificate of origin (if claiming preferential duty)','Import permits or licences for regulated goods (if required)'],domestic:['Invoice or delivery challan','Packing list','Consignment note (builty)','Sales tax invoice (if applicable)','Cargo insurance (recommended)']};
+$('dgo').onclick=function(){var k=$('dd').value,o=$('dout');o.textContent='';var ul=el('ul');ul.style.margin='8px 0 12px';ul.style.paddingInlineStart='20px';DOC[k].forEach(function(d){ul.appendChild(el('li','',d));});o.appendChild(ul);o.appendChild(el('small','','General guide only. Requirements depend on the goods and the destination. We confirm the exact list when you share your shipment details.'));o.appendChild(waBtn('Hello Zohaib Logistics, please confirm the documents for my '+k+' shipment by '+$('dm').value.toLowerCase()+'.','Confirm on WhatsApp'));};
+/* booking wizard */
+var wsn=1;function wshow(){[].forEach.call(document.querySelectorAll('.wz'),function(e){e.hidden=(+e.dataset.s!==wsn);});[].forEach.call($('wst').children,function(s,i){s.className=i+1===wsn?'on':'';});$('wback').style.visibility=wsn>1?'visible':'hidden';$('wnext').textContent=wsn<4?'Next':'Send on WhatsApp';}
+$('wback').onclick=function(){if(wsn>1){wsn--;wshow();}};
+$('wnext').onclick=function(){var o=$('wout');o.textContent='';if(wsn<4){wsn++;wshow();return;}
+ if(!$('wn').value.trim()||!$('wp').value.trim()){o.textContent='Please add your name and phone number.';return;}
+ var f=$('wfi').files,names=[].map.call(f,function(x){return x.name;}).join(', '),d={from:$('wf').value,to:$('wt').value,mode:$('wm').value,cargo:$('wcg').value,weight:$('ww').value,details:$('wd2').value,date:$('wdt').value,name:$('wn').value,phone:$('wp').value,files:names};lead('booking',d);
+ var t='Hello Zohaib Logistics, I would like to book a shipment.\nRoute: '+d.from+' to '+d.to+' ('+d.mode+')\nCargo: '+d.cargo+', '+(d.weight||'-')+' kg\nDetails: '+(d.details||'-')+'\nPreferred date: '+(d.date||'-')+'\nName: '+d.name+'\nPhone: '+d.phone+(names?'\nDocuments I will attach here: '+names:'');
+ window.open('https://wa.me/923168463954?text='+encodeURIComponent(t),'_blank','noopener');};
+wshow();
+/* optional sections from CFG */
+if(CFG.cases.length){CFG.cases.forEach(function(c){var d=el('div','sv');d.appendChild(el('b','',c.t));d.appendChild(el('span','',c.d));$('cs_f').appendChild(d);});$('cases').hidden=false;}
+if(CFG.jobs.length){CFG.jobs.forEach(function(c){var d=el('div','sv');d.appendChild(el('b','',c.t));d.appendChild(el('span','',c.d));d.appendChild(document.createElement('br'));d.appendChild(waBtn('Hello Zohaib Logistics, I would like to apply for: '+c.t,'Apply on WhatsApp'));$('jb_f').appendChild(d);});$('jobs').hidden=false;}
+/* help bot */
+var BOT=[[/quote|price|rate|cost|estimate|charges/i,'For an indicative transit time use the Quick quote form. Send your details on WhatsApp and we will confirm the price.','quote'],[/track|status|where is/i,'You can check a shipment in the Track a shipment box. Live updates are shared by our team on WhatsApp.','ti'],[/document|paper|customs|gd|invoice/i,'Open Shipping tools for a documents checklist for export, import and domestic shipments.','tools'],[/cbm|container|size|volume|capacity/i,'Use the container and CBM calculator in Shipping tools, or see the container sizes above.','fleet'],[/partner|truck owner|transporter|vehicle/i,'Truck owners can use the Partner with us form.','partner'],[/book|booking|ship my|send my/i,'Use the Book a shipment form. It collects the details and sends them to us on WhatsApp.','book'],[/contact|phone|call|whatsapp|number/i,'You can call +92 309 3540698 or message us on WhatsApp 0316 8463954.','contact']];
+function say(t,u){var p=el('p',u?'u':'',t);$('cmsg').appendChild(p);$('cmsg').scrollTop=1e5;return p;}
+function ask(q){say(q,true);var r=null;BOT.forEach(function(b){if(!r&&b[0].test(q))r=b;});var p=say(r?r[1]:'I can help with quotes, tracking, documents and container sizes. For anything else, message us on WhatsApp.');
+ if(r){var a=el('a','','Go to this section');a.href='#'+r[2];a.style.cssText='display:block;margin-top:6px;font-weight:600';a.onclick=function(e){e.preventDefault();var t=$(r[2]);if(t)t.scrollIntoView({behavior:'smooth'});};p.appendChild(a);}else p.appendChild(waBtn('Hello Zohaib Logistics, I have a question: '+q,'Ask on WhatsApp'));}
+['Get a quote','Documents','Container sizes','Contact'].forEach(function(c){var b=el('button','',c);b.onclick=function(){ask(c);};$('cchips').appendChild(b);});
+$('cin').onsubmit=function(e){e.preventDefault();var v=$('ci').value.trim();if(!v)return;$('ci').value='';ask(v);};
+$('hbtn').onclick=function(){var c=$('chat');c.hidden=!c.hidden;if(!c.hidden&&!$('cmsg').children.length)say('Hello! I am an automated helper. Ask about quotes, documents, containers or booking.');};
+/* sound */
+var AC,aOn=false,gN;
+$('snd').onclick=function(){if(!AC){var C=window.AudioContext||window.webkitAudioContext;if(!C)return;AC=new C();var len=AC.sampleRate*2,buf=AC.createBuffer(1,len,AC.sampleRate),d=buf.getChannelData(0),last=0;for(var i=0;i<len;i++){var w=Math.random()*2-1;last=(last+.02*w)/1.02;d[i]=last*3.5;}var src=AC.createBufferSource();src.buffer=buf;src.loop=true;var lp=AC.createBiquadFilter();lp.type='lowpass';lp.frequency.value=600;gN=AC.createGain();gN.gain.value=0;src.connect(lp);lp.connect(gN);gN.connect(AC.destination);src.start();var hum=AC.createOscillator(),hg=AC.createGain();hum.type='sine';hum.frequency.value=58;hg.gain.value=.012;hum.connect(hg);hg.connect(gN);hum.start();}
+ aOn=!aOn;if(AC.state==='suspended')AC.resume();gN.gain.setTargetAtTime(aOn?.35:0,AC.currentTime,.3);$('snd').textContent=aOn?'🔊':'🔇';};
+/* cookie consent for analytics */
+var ck=null;try{ck=localStorage.getItem('zl_cookie');}catch(x){}
+function allow(){CONSENT=true;pend.splice(0).forEach(function(p){addScript(p[0],p[1]);});}
+if(pend.length){if(ck==='yes')allow();else if(ck!=='no')$('cookie').hidden=false;}
+$('cya').onclick=function(){try{localStorage.setItem('zl_cookie','yes');}catch(x){}$('cookie').hidden=true;allow();};$('cno').onclick=function(){try{localStorage.setItem('zl_cookie','no');}catch(x){}$('cookie').hidden=true;};
+/* airport cargo loading and last-mile courier */
+var ctug,ctc=[],lbox,courier,drop;
+(function(){var g=S[2].g;ctug=new THREE.Group();box(1.4,.6,.8,YEL,0,.55,0,ctug);box(.5,.5,.7,GLASS,.4,1.05,0,ctug,{nc:1});[.45,-.45].forEach(function(x){wheel(ctug,x,.25,.42,.25);wheel(ctug,x,.25,-.42,.25);});
+ [-1.7,-3.2].forEach(function(x){var c=new THREE.Group();box(1.2,.15,.9,DARK,0,.4,0,c);[.4,-.4].forEach(function(o){wheel(c,o,.2,.5,.2);wheel(c,o,.2,-.5,.2);});c.box=box(.9,.6,.7,0xc9a27a,0,.8,0,c);c.position.x=x;ctug.add(c);ctc.push(c);});
+ ctug.position.set(-6,.35,-5.4);g.add(ctug);box(.9,.1,2.1,DARK,0,.9,-3.9,g,{nc:1,rx:-.44});box(.12,.8,.12,GREY,.4,.45,-4.7,g,{nc:1});box(.12,.8,.12,GREY,-.4,.45,-4.7,g,{nc:1});
+ lbox=box(.6,.4,.5,0xc9a27a,0,1,-4.7,g,{nc:1});lbox.visible=false;
+ var h=S[6].g;courier=new THREE.Group();box(.2,.6,.3,0x2b3445,0,.55,0,courier,{nc:1});box(.3,.5,.4,0xd7e03b,0,1.15,0,courier);prim(new THREE.SphereGeometry(.16,8,6),0xe8c9a0,0,1.55,0,courier,{nc:1});box(.3,.06,.3,RED,0,1.7,0,courier,{nc:1});courier.pb=box(.45,.35,.35,0xc9a27a,.35,1.0,0,courier);courier.position.set(12,.22,.75);courier.visible=false;h.add(courier);
+ drop=box(.5,.4,.4,0xc9a27a,11.9,.4,-3.6,h);drop.visible=false;})();
+function cargoAnim(tt){var t=tt%70,x=-6,on=t>=28&&t<35.5;lbox.visible=false;
+ if(on){var tr=Math.floor((t-28)/3.75),u=((t-28)/3.75)%1,st=tr?3.2:1.7;if(u<.35)x=-6+(st+6)*ss(u/.35);else if(u<.5){x=st;var s=(u-.35)/.15;lbox.visible=true;lbox.position.set(0,.95+.45*s,-4.7+1.6*s);}else if(u<.85)x=st-(st+6)*ss((u-.5)/.35);}
+ ctug.position.x=x;ctc[0].box.visible=!(t>=29.3&&t<35.5);ctc[1].box.visible=!(t>=33.1&&t<35.5);}
+function courierAnim(tt){var a=tt*.35,th=(((a-(Math.PI/2-.9))%(2*Math.PI))+2*Math.PI)%(2*Math.PI),w=th/1.8;
+ if(w<1){courier.visible=true;var z,carry=true,ry=Math.PI/2;if(w<.3)z=.75-4.35*(w/.3);else if(w<.5){z=-3.6;carry=false;}else if(w<.8){z=-3.6+4.35*((w-.5)/.3);carry=false;ry=-Math.PI/2;}else{z=.75;carry=false;}courier.position.set(12,.22+Math.abs(Math.sin(tt*10))*.05,z);courier.rotation.y=ry;courier.pb.visible=carry;if(w>=.8)courier.visible=false;}else courier.visible=false;
+ drop.visible=w>=.45&&w<2.2;}
+/* warehouse roof with sawtooth skylights, closed walls, dock openings */
+var roofG,rbtnEl;
+(function(g){
+  box(.6,6,22,WHITE,15,3,0,g);box(.7,.8,22.2,RED,15,6.2,0,g);
+  [[-15,-7.3],[-4.7,-3.3],[-.7,.7],[3.3,4.7],[7.3,15]].forEach(function(r){box(r[1]-r[0],3.6,.5,WHITE,(r[0]+r[1])/2,1.8,10.9,g);});
+  box(14.6,1.15,.5,WHITE,0,3.03,10.9,g);
+  roofG=new THREE.Group();g.add(roofG);
+  box(31,.3,22.8,0x7c8389,0,6.35,0,roofG);
+  for(var k=0;k<5;k++){var z0=-11+k*4.4;box(30.4,.15,4.56,0xb9c0c6,0,7.1,z0+2.2,roofG,{rx:-.266});box(30.4,1.2,.1,0x3b5d78,0,7.1,z0+4.4,roofG,{nc:1});}
+  box(31,.5,.4,RED,0,6.75,11.2,roofG);box(31,.5,.4,RED,0,6.75,-11.2,roofG);[-15.5,15.5].forEach(function(x){box(.4,.5,22.8,RED,x,6.75,0,roofG);});
+  [[-10,-2.4],[0,2.0],[10,-2.4]].forEach(function(a){cyl(.45,.5,.8,0xb0b5ba,a[0],8.1,a[1],roofG,{s:10});});box(2.4,.9,1.6,0xaab0b5,-6,8.2,6.4,roofG);box(2.4,.9,1.6,0xaab0b5,7,8.2,6.4,roofG);
+  var il=new THREE.PointLight(0xffe2b0,1.3,34);il.position.set(0,5,0);il.visible=false;g.add(il);lamps.push(il);
+  var rb=el('button','fbtn','Roof: on');rb.id='rbtn';rb.style.bottom='calc(260px + env(safe-area-inset-bottom,0px))';rb.style.display='none';rb.onclick=function(){roofG.visible=!roofG.visible;rb.textContent='Roof: '+(roofG.visible?'on':'off');};document.body.appendChild(rb);rbtnEl=rb;
+})(S[0].g);
+/* local time based day or night, once on load */
+var hr=new Date().getHours();if(hr>=19||hr<6)$('nt').onclick();
+/* drone view: high aerial orbit, drag to rotate, wheel to zoom */
+var drone={on:false,over:false,focus:0,az:.6,el:1.05,z:1,drag:false,lx:0,ly:0},dm=0;
+function droneTarget(){if(drone.over&&!drone.drag&&!reduce)drone.az+=(Math.PI/2+Math.sin(performance.now()/7000)*.45-drone.az)*.02;else if(!drone.drag&&!reduce)drone.az+=.0016;var el=drone.el,cx,rad,tz=drone.over?-5:0;if(drone.over){cx=175;rad=310*drone.z;}else{cx=S[drone.focus].x;rad=46*drone.z;}tl.set(cx,0,tz);tp.set(cx+Math.cos(drone.az)*rad*Math.cos(el),Math.sin(el)*rad,tz+Math.sin(drone.az)*rad*Math.cos(el));}
+function setDrone(mode){drone.on=mode>0;drone.over=mode===2;document.body.classList.toggle('drone',drone.on);cv.style.touchAction=drone.on?'none':'';
+ if(drone.on){drone.focus=Math.max(cur,0);drone.el=mode===2?1.2:1.05;if(mode===2)drone.az=Math.PI/2;drone.z=1;window.scrollTo(0,Math.min(scrollY,scr.offsetHeight-innerHeight));}
+ scene.fog.near=mode===2?400:75;scene.fog.far=mode===2?1200:200;cam.far=mode===2?1200:400;cam.updateProjectionMatrix();
+ $('dbtn').textContent=mode===0?'🚁 Drone view':mode===1?'🚁 World overview':'\u2716 Exit drone';}
+$('dbtn').onclick=function(){dm=(dm+1)%3;setDrone(dm);};
+cv.addEventListener('pointerdown',function(e){if(!drone.on)return;drone.drag=true;drone.lx=e.clientX;drone.ly=e.clientY;try{cv.setPointerCapture(e.pointerId);}catch(x){}});
+cv.addEventListener('pointermove',function(e){if(!drone.drag)return;drone.az-=(e.clientX-drone.lx)*.006;drone.el=Math.max(.35,Math.min(1.45,drone.el+(e.clientY-drone.ly)*.004));drone.lx=e.clientX;drone.ly=e.clientY;});
+['pointerup','pointercancel'].forEach(function(ev){cv.addEventListener(ev,function(){drone.drag=false;});});
+cv.addEventListener('wheel',function(e){if(!drone.on)return;e.preventDefault();drone.z=Math.max(.35,Math.min(1.8,drone.z*(1+e.deltaY*.001)));},{passive:false});
+/* open sea with a natural coastline, and station labels for the overview */
+var wt3,SLB=[],lv=new THREE.Vector3();
+function labelAnim(){if(rbtnEl)rbtnEl.style.display=drone.on?'block':'none';var on=drone.on&&drone.over;if(on)cam.updateMatrixWorld();SLB.forEach(function(b,i){if(!on){b.style.display='none';return;}lv.set(S[i].x,10,0).project(cam);if(lv.z>1){b.style.display='none';return;}b.style.display='block';b.style.transform='translate('+((lv.x*.5+.5)*innerWidth)+'px,'+((-lv.y*.5+.5)*innerHeight)+'px) translate(-50%,-130%)';});}
+TB.forEach(function(n,i){var b=el('button','slbl',n);b.setAttribute('data-k','t'+i);b.onclick=function(){dm=1;setDrone(1);drone.focus=i;setStep(i);};document.body.appendChild(b);SLB.push(b);});
+(function(){function ZS(x){return 52+Math.sin(x*.045)*7+Math.sin(x*.11+1)*3;}
+ var sh=new THREE.Shape(),x;sh.moveTo(-200,-ZS(-200));for(x=-190;x<=560;x+=10)sh.lineTo(x,-ZS(x));sh.lineTo(560,-300);sh.lineTo(-200,-300);sh.closePath();
+ wt3=wt1.clone();wt3.needsUpdate=true;wt3.repeat.set(1/40,1/40);
+ var sea=new THREE.Mesh(new THREE.ShapeGeometry(sh),new THREE.MeshPhongMaterial({color:0x1f6a9a,shininess:90,specular:0x9fb4c8,bumpMap:wt3,bumpScale:1.5}));sea.rotation.x=-Math.PI/2;sea.position.y=.345;scene.add(sea);
+ var pos=[],idx=[],n=0;for(x=-200;x<=560;x+=10){pos.push(x,.2,ZS(x),x,.2,ZS(x)-7);if(n>0){var a=(n-1)*2;idx.push(a,a+1,a+2,a+1,a+3,a+2);}n++;}
+ var gg=new THREE.BufferGeometry();gg.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));gg.setIndex(idx);gg.computeVertexNormals();scene.add(new THREE.Mesh(gg,new THREE.MeshLambertMaterial({color:0xe2d3a8,side:THREE.DoubleSide})));})();
+setTimeout(function(){var i=$('intro');i.classList.add('hide');setTimeout(function(){i.remove();},700);},1600);
+frame();
+})();
+</script>
+</body>
+</html>
